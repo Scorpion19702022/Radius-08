@@ -14,3 +14,9 @@
 	--color-darkone: #202020;
 	--color-darktwo: #000000;
 }
+
+@import './small';
+@import './medium';
+@import './large';
+@import './xlarge';
+@import './xxlarge.scss';
