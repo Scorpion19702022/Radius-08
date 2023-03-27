@@ -1,0 +1,16 @@
+@import './components';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--color-light: #f3f6f4;
+	--color-red: #d00606;
+	--color-darkone: #202020;
+	--color-darktwo: #000000;
+}
