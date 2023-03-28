@@ -1,1 +1,9 @@
-/*# sourceMappingURL=xxlarge.css.map */
+@media (min-width: 1400px) {
+  nav .wrapper .language {
+    left: 70%;
+    width: 30%;
+  }
+  nav .wrapper .navbar {
+    width: 20%;
+  }
+}/*# sourceMappingURL=xxlarge.css.map */

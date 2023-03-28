@@ -1,2 +1,14 @@
 @media (min-width: 1200px) {
+	nav {
+		.wrapper {
+			.logo {
+				width: 25%;
+				height: 25%;
+			}
+			.language {
+				left: 12%;
+				width: 4%;
+			}
+		}
+	}
 }

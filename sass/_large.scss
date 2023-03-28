@@ -1,2 +1,21 @@
 @media (min-width: 992px) {
+	nav {
+		.wrapper {
+			.logo {
+				a {
+					img {
+						width: 23%;
+						height: 23%;
+					}
+				}
+			}
+			.language {
+				left: 15%;
+				width: 5%;
+			}
+			.navbar {
+				width: 58%;
+			}
+		}
+	}
 }

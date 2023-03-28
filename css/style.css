@@ -48,9 +48,9 @@ nav .wrapper {
   border-bottom: 0.04em solid var(--color-red);
 }
 nav .wrapper .logo {
-  max-width: 35%;
-  max-height: 35%;
-  margin: 0.6em;
+  width: 28%;
+  height: 28%;
+  margin: 0.4em 0em 0em 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,9 +107,10 @@ nav .wrapper .navbar {
 nav .wrapper .navbar__link {
   position: relative;
   color: var(--color-light);
-  font-size: 2em;
+  font-size: 1.6em;
   text-decoration: none;
   padding-bottom: 0.1em;
+  margin: 0.2em 0;
   -webkit-transition: border-bottom 0.3s ease-in-out;
   transition: border-bottom 0.3s ease-in-out;
   display: -webkit-box;
@@ -142,4 +143,84 @@ nav .wrapper .burger {
 }
 nav .wrapper .burger .hide {
   display: none;
+}
+
+@media (max-width: 576px) {
+  nav .wrapper {
+    padding: 0em 1.5em;
+  }
+  nav .wrapper .logo {
+    width: 45%;
+    height: 45%;
+  }
+  nav .wrapper .logo a img {
+    width: 30%;
+    height: 30%;
+  }
+  nav .wrapper .language {
+    width: 10%;
+  }
+}
+@media (min-width: 768px) {
+  nav .wrapper {
+    position: relative;
+  }
+  nav .wrapper .language {
+    width: 5%;
+    left: 15%;
+  }
+  nav .wrapper .navbar {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    background: transparent;
+  }
+  nav .wrapper .navbar a {
+    font-size: 2.2rem;
+  }
+  nav .wrapper .burger {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  nav .wrapper .logo a img {
+    width: 23%;
+    height: 23%;
+  }
+  nav .wrapper .language {
+    left: 15%;
+    width: 5%;
+  }
+  nav .wrapper .navbar {
+    width: 58%;
+  }
+}
+@media (min-width: 1200px) {
+  nav .wrapper .logo {
+    width: 25%;
+    height: 25%;
+  }
+  nav .wrapper .language {
+    left: 12%;
+    width: 4%;
+  }
+}
+@media (min-width: 1400px) {
+  nav .wrapper .logo {
+    max-width: 18%;
+    max-height: 18%;
+  }
+  nav .wrapper .language {
+    left: 10%;
+    width: 2.6%;
+  }
+  nav .wrapper .navbar {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */

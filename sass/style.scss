@@ -42,9 +42,9 @@ nav {
 		background-color: var(--color-darktwo);
 		border-bottom: 0.04em solid var(--color-red);
 		.logo {
-			max-width: 35%;
-			max-height: 35%;
-			margin: 0.6em;
+			width: 28%;
+			height: 28%;
+			margin: 0.4em 0em 0em 0em;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -87,9 +87,10 @@ nav {
 			&__link {
 				position: relative;
 				color: var(--color-light);
-				font-size: 2em;
+				font-size: 1.6em;
 				text-decoration: none;
 				padding-bottom: 0.1em;
+				margin: 0.2em 0;
 				transition: border-bottom 0.3s ease-in-out;
 				display: flex;
 				justify-content: center;

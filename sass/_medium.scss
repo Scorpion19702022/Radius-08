@@ -1,2 +1,26 @@
 @media (min-width: 768px) {
+	nav {
+		.wrapper {
+			position: relative;
+			.language {
+				width: 5%;
+				left: 15%;
+			}
+			.navbar {
+				position: relative;
+				flex-direction: row;
+				width: 65%;
+				height: 100%;
+				top: 0;
+				padding: 0;
+				background: transparent;
+				a {
+					font-size: 2.2rem;
+				}
+			}
+			.burger {
+				display: none;
+			}
+		}
+	}
 }
