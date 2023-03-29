@@ -103,6 +103,12 @@ nav .wrapper .navbar {
   top: 60px;
   left: 0;
   background-color: var(--color-darkone);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 nav .wrapper .navbar__link {
   position: relative;
@@ -134,6 +140,10 @@ nav .wrapper .navbar__link:hover::before {
 }
 nav .wrapper .navbar__link:hover {
   color: var(--color-red);
+}
+nav .wrapper .actionnav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 nav .wrapper .burger {
   font-size: 3rem;
@@ -180,6 +190,8 @@ nav .wrapper .burger .hide {
     top: 0;
     padding: 0;
     background: transparent;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   nav .wrapper .navbar a {
     font-size: 2.2rem;
@@ -221,6 +233,6 @@ nav .wrapper .burger .hide {
     width: 2.6%;
   }
   nav .wrapper .navbar {
-    width: 60%;
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

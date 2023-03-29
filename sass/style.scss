@@ -83,7 +83,8 @@ nav {
 			top: 60px;
 			left: 0;
 			background-color: var(--color-darkone);
-			// transform: translateX(-100%);
+			transform: translateX(100%);
+			transition: transform 0.3s ease-in-out;
 			&__link {
 				position: relative;
 				color: var(--color-light);
@@ -111,9 +112,9 @@ nav {
 			}
 		}
 
-		// .actionnav {
-		// 	transform: translateX(0);
-		// }
+		.actionnav {
+			transform: translateX(0);
+		}
 
 		.burger {
 			font-size: 3rem;
