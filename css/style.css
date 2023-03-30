@@ -47,6 +47,7 @@ section {
   --color-light: #f3f6f4;
   --color-red: #d00606;
   --color-darklight: #161616;
+  --color-darklightopacity: rgba(22, 22, 22, 0.8);
   --color-darkone: #111111;
   --color-darktwo: #000000;
 }
@@ -146,6 +147,7 @@ nav .wrapper .navbar {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  z-index: 100;
 }
 nav .wrapper .navbar__link {
   position: relative;
@@ -217,11 +219,12 @@ nav .wrapper .burger .hide {
   width: 90%;
   height: 90%;
   padding: 1.2em;
+  z-index: -1;
 }
 .sectionhome .cards__cardone {
   width: 90%;
   height: 40%;
-  background-color: var(--color-darktwo);
+  background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
   opacity: 0;
@@ -231,7 +234,7 @@ nav .wrapper .burger .hide {
 .sectionhome .cards__cardtwo {
   width: 90%;
   height: 40%;
-  background-color: var(--color-darktwo);
+  background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
   opacity: 0;

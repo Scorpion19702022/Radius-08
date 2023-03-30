@@ -12,6 +12,7 @@
 	--color-light: #f3f6f4;
 	--color-red: #d00606;
 	--color-darklight: #161616;
+	--color-darklightopacity: rgba(22, 22, 22, 0.8);
 	--color-darkone: #111111;
 	--color-darktwo: #000000;
 }
@@ -86,6 +87,7 @@ nav {
 			background-color: var(--color-darkone);
 			transform: translateX(100%);
 			transition: transform 0.3s ease-in-out;
+			z-index: 100;
 			&__link {
 				position: relative;
 				color: var(--color-light);
@@ -143,10 +145,12 @@ nav {
 		width: 90%;
 		height: 90%;
 		padding: 1.2em;
+		z-index: -1;
+		// overflow: hidden;
 		&__cardone {
 			width: 90%;
 			height: 40%;
-			background-color: var(--color-darktwo);
+			background-color: var(--color-darklightopacity);
 			transform: translateX(150%);
 			opacity: 0;
 			transition: all 0.7s ease-in-out;
@@ -154,7 +158,7 @@ nav {
 		&__cardtwo {
 			width: 90%;
 			height: 40%;
-			background-color: var(--color-darktwo);
+			background-color: var(--color-darklightopacity);
 			transform: translateX(-150%);
 			opacity: 0;
 			opacity: 0;
