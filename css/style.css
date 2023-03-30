@@ -1,3 +1,21 @@
+section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 *,
 *::before,
 *::after {
@@ -10,6 +28,7 @@
 :root {
   --color-light: #f3f6f4;
   --color-red: #d00606;
+  --color-darklight: #1d1d1d;
   --color-darkone: #111111;
   --color-darktwo: #000000;
 }
