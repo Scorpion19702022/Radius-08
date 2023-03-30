@@ -225,8 +225,8 @@ nav .wrapper .burger .hide {
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 .sectionhome .cards__cardtwo {
   width: 90%;
@@ -236,8 +236,8 @@ nav .wrapper .burger .hide {
           transform: translateX(-150%);
   opacity: 0;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 .sectionhome .cards .actioncards {
   -webkit-transform: translateX(0%);
