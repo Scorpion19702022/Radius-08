@@ -1,3 +1,20 @@
+body {
+  position: relative;
+  height: 100%;
+  background-image: url("../img/printer-2847970.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 33% 65%;
+  z-index: -10;
+}
+body .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 39, 39, 0.9);
+  z-index: -5;
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -14,6 +31,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 0.02em solid var(--color-red);
 }
 
 *,
@@ -28,7 +46,7 @@ section {
 :root {
   --color-light: #f3f6f4;
   --color-red: #d00606;
-  --color-darklight: #1d1d1d;
+  --color-darklight: #161616;
   --color-darkone: #111111;
   --color-darktwo: #000000;
 }
