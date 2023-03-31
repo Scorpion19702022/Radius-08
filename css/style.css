@@ -35,6 +35,11 @@ section {
   border-bottom: 0.02em solid var(--color-red);
 }
 
+p {
+  font-size: 1.6rem;
+  color: var(--color-light);
+}
+
 *,
 *::before,
 *::after {
@@ -46,6 +51,7 @@ section {
 
 :root {
   --color-light: #f3f6f4;
+  --color-lightmore: #b7b7b7;
   --color-red: #d00606;
   --color-darklight: #1d1d1d;
   --color-darklightopacity: rgba(29, 29, 29, 0.8);
@@ -83,7 +89,7 @@ nav .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0em 3em;
-  background-color: var(--color-darktwo);
+  background-color: var(--color-darklight);
   border-bottom: 0.04em solid var(--color-red);
 }
 nav .wrapper .logo {
@@ -141,7 +147,7 @@ nav .wrapper .navbar {
   padding: 8em 0em 12em 0em;
   top: 60px;
   left: 0;
-  background-color: var(--color-darkone);
+  background-color: var(--color-darklight);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -225,6 +231,20 @@ nav .wrapper .burger .hide {
 .sectionhome .cards__cardone {
   width: 90%;
   height: 45%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
@@ -232,9 +252,58 @@ nav .wrapper .burger .hide {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
+.sectionhome .cards__cardone--img {
+  width: 50%;
+  height: 30%;
+  margin-bottom: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sectionhome .cards__cardone--img .imgcardone {
+  width: 160%;
+  height: 160%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.sectionhome .cards__cardone--img .imgcardoneview {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.sectionhome .cards__cardone--heading {
+  font-size: 3.8rem;
+  color: var(--color-lightmore);
+  margin-bottom: 0.8em;
+}
 .sectionhome .cards__cardtwo {
   width: 90%;
   height: 45%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
@@ -242,6 +311,36 @@ nav .wrapper .burger .hide {
   opacity: 0;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
+}
+.sectionhome .cards__cardtwo--img {
+  width: 50%;
+  height: 30%;
+  margin-bottom: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sectionhome .cards__cardtwo--img .imgcardtwo {
+  width: 160%;
+  height: 160%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.sectionhome .cards__cardtwo--img .imgcardoneview {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 .sectionhome .cards .actioncards {
   -webkit-transform: translateX(0%);
@@ -292,6 +391,37 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .burger {
     display: none;
+  }
+  .sectionhome .cards__cardone {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sectionhome .cards__cardone--img {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 0em;
+  }
+  .sectionhome .cards__cardone--img .imgcardone {
+    width: 160%;
+    height: 160%;
+  }
+  .sectionhome .cards__cardone--heading {
+    font-size: 4.8rem;
+  }
+  .sectionhome .cards__cardtwo {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sectionhome .cards__cardtwo--img {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 0em;
+  }
+  .sectionhome .cards__cardtwo--img .imgcardtwo {
+    width: 160%;
+    height: 160%;
   }
 }
 @media (min-width: 992px) {

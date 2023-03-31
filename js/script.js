@@ -9,6 +9,8 @@ const links = document.querySelectorAll('.navbar__link')
 const cardHomeOne = document.querySelector('.cards__cardone')
 const cardhomeTwo = document.querySelector('.cards__cardtwo')
 const body = document.querySelector('body')
+const imgCardOne = document.querySelector('.imgcardone')
+const imgCardTwo = document.querySelector('.imgcardtwo')
 
 body.onload = function () {
 	loadCards()
@@ -21,6 +23,12 @@ const loadCards = () => {
 	setTimeout(() => {
 		cardhomeTwo.classList.add('actioncards')
 	}, 1600)
+	setTimeout(() => {
+		imgCardOne.classList.add('imgcardoneview')
+	}, 2400)
+	setTimeout(() => {
+		imgCardTwo.classList.add('imgcardoneview')
+	}, 3200)
 }
 
 // ------------------------------------------

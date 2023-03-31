@@ -24,4 +24,36 @@
 			}
 		}
 	}
+
+	.sectionhome {
+		.cards {
+			&__cardone {
+				justify-content: space-between;
+				&--img {
+					width: 40%;
+					height: 40%;
+					margin-bottom: 0em;
+					.imgcardone {
+						width: 160%;
+						height: 160%;
+					}
+				}
+				&--heading {
+					font-size: 4.8rem;
+				}
+			}
+			&__cardtwo {
+				justify-content: space-between;
+				&--img {
+					width: 40%;
+					height: 40%;
+					margin-bottom: 0em;
+					.imgcardtwo {
+						width: 160%;
+						height: 160%;
+					}
+				}
+			}
+		}
+	}
 }
