@@ -11,8 +11,8 @@
 :root {
 	--color-light: #f3f6f4;
 	--color-red: #d00606;
-	--color-darklight: #161616;
-	--color-darklightopacity: rgba(22, 22, 22, 0.8);
+	--color-darklight: #1d1d1d;
+	--color-darklightopacity: rgba(29, 29, 29, 0.8);
 	--color-darkone: #111111;
 	--color-darktwo: #000000;
 }
@@ -143,13 +143,13 @@ nav {
 		align-items: center;
 		justify-content: space-around;
 		width: 90%;
-		height: 90%;
+		height: 100%;
 		padding: 1.2em;
 		z-index: -1;
 		// overflow: hidden;
 		&__cardone {
 			width: 90%;
-			height: 40%;
+			height: 45%;
 			background-color: var(--color-darklightopacity);
 			transform: translateX(150%);
 			opacity: 0;
@@ -157,7 +157,7 @@ nav {
 		}
 		&__cardtwo {
 			width: 90%;
-			height: 40%;
+			height: 45%;
 			background-color: var(--color-darklightopacity);
 			transform: translateX(-150%);
 			opacity: 0;

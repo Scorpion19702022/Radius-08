@@ -5,6 +5,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: 55% 65%;
+  overflow: hidden;
   z-index: -10;
 }
 body .shadow {
@@ -46,8 +47,8 @@ section {
 :root {
   --color-light: #f3f6f4;
   --color-red: #d00606;
-  --color-darklight: #161616;
-  --color-darklightopacity: rgba(22, 22, 22, 0.8);
+  --color-darklight: #1d1d1d;
+  --color-darklightopacity: rgba(29, 29, 29, 0.8);
   --color-darkone: #111111;
   --color-darktwo: #000000;
 }
@@ -217,13 +218,13 @@ nav .wrapper .burger .hide {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
-  height: 90%;
+  height: 100%;
   padding: 1.2em;
   z-index: -1;
 }
 .sectionhome .cards__cardone {
   width: 90%;
-  height: 40%;
+  height: 45%;
   background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
@@ -233,7 +234,7 @@ nav .wrapper .burger .hide {
 }
 .sectionhome .cards__cardtwo {
   width: 90%;
-  height: 40%;
+  height: 45%;
   background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);

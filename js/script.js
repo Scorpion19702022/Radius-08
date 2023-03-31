@@ -17,10 +17,10 @@ body.onload = function () {
 const loadCards = () => {
 	setTimeout(() => {
 		cardHomeOne.classList.add('actioncards')
-	}, 1000)
+	}, 800)
 	setTimeout(() => {
 		cardhomeTwo.classList.add('actioncards')
-	}, 2000)
+	}, 1600)
 }
 
 // ------------------------------------------
