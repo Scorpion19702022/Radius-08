@@ -26,13 +26,19 @@
 	}
 
 	.sectionhome {
+		padding: 8em 2em 4em 2em;
 		.cards {
+			width: 60%;
+			align-self: start;
+			padding: 0.4em;
+			overflow: hidden;
 			&__cardone {
 				justify-content: space-between;
+				transition: transform 0.3s, opacity 1s ease-in-out;
 				&--img {
 					width: 40%;
 					height: 40%;
-					margin-bottom: 0em;
+					margin-bottom: 0.2em;
 					.imgcardone {
 						width: 160%;
 						height: 160%;
@@ -40,14 +46,16 @@
 				}
 				&--heading {
 					font-size: 4.8rem;
+					margin-bottom: 0.4em;
 				}
 			}
 			&__cardtwo {
 				justify-content: space-between;
+				transition: transform 0.3s, opacity 1s ease-in-out;
 				&--img {
 					width: 40%;
 					height: 40%;
-					margin-bottom: 0em;
+					margin-bottom: 0.2em;
 					.imgcardtwo {
 						width: 160%;
 						height: 160%;

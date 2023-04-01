@@ -14,4 +14,33 @@
 			}
 		}
 	}
+	.sectionhome {
+		padding: 6em 2em 2em 8em;
+		.cards {
+			width: 40%;
+			padding: 0.4em;
+			overflow: hidden;
+			&__cardone {
+				&--img {
+					margin-bottom: 1.2em;
+				}
+				&--heading {
+					font-size: 6rem;
+				}
+				&--text {
+					font-size: 1.8rem;
+				}
+			}
+			&__cardtwo {
+				padding: 3em;
+				height: 47%;
+				&--img {
+					margin-bottom: 1.2em;
+				}
+				&--text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
 }

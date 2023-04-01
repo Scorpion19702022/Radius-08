@@ -12,6 +12,7 @@
 	--color-light: #f3f6f4;
 	--color-lightmore: #b7b7b7;
 	--color-red: #d00606;
+	--color-darkred: #990000;
 	--color-darklight: #1d1d1d;
 	--color-darklightopacity: rgba(29, 29, 29, 0.8);
 	--color-darkone: #111111;
@@ -33,6 +34,7 @@ nav {
 	height: 60px;
 	position: fixed;
 	top: 0;
+	z-index: 100;
 
 	.wrapper {
 		width: 100%;
@@ -142,11 +144,11 @@ nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 90%;
 		height: 100%;
 		padding: 1.2em;
-		z-index: -1;
+		// z-index: -1;
 		// overflow: hidden;
 		&__cardone {
 			width: 90%;
@@ -156,13 +158,12 @@ nav {
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
-			justify-content: space-around;
+			justify-content: space-between;
 			background-color: var(--color-darklightopacity);
 			transform: translateX(150%);
 			opacity: 0;
 			transition: all 0.7s ease-in-out;
 			&--img {
-				width: 50%;
 				height: 30%;
 				margin-bottom: 0.8em;
 				display: flex;
@@ -200,7 +201,6 @@ nav {
 			opacity: 0;
 			transition: all 0.7s ease-in-out;
 			&--img {
-				width: 50%;
 				height: 30%;
 				margin-bottom: 0.8em;
 				display: flex;
@@ -215,6 +215,23 @@ nav {
 				}
 				.imgcardoneview {
 					transform: scaleX(1);
+				}
+			}
+			&--btn {
+				width: 100%;
+				padding: 0.4em 0;
+				background-color: var(--color-red);
+				border: 0.04em solid var(--color-darkred);
+				border-radius: 0.1em;
+				cursor: pointer;
+				transition: background-color 0.3s ease-in-out;
+				&:hover {
+					background-color: var(--color-darkred);
+				}
+				a {
+					text-decoration: none;
+					color: var(--color-light);
+					text-transform: uppercase;
 				}
 			}
 		}
