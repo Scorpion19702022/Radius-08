@@ -2,6 +2,14 @@
 	nav {
 		.wrapper {
 			position: relative;
+			.logo {
+				a {
+					img {
+						width: 25%;
+						height: 25%;
+					}
+				}
+			}
 			.language {
 				width: 5%;
 				left: 15%;

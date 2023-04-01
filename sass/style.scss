@@ -55,8 +55,8 @@ nav {
 			align-items: center;
 			a {
 				img {
-					width: 30%;
-					height: 30%;
+					width: 35%;
+					height: 35%;
 				}
 			}
 		}
@@ -139,7 +139,8 @@ nav {
 .sectionhome {
 	display: flex;
 	align-items: center;
-	padding: 8em 4em 4em 4em;
+	height: 100vh;
+	padding: 6em 2em 2em 2em;
 	.cards {
 		display: flex;
 		flex-direction: column;
@@ -147,12 +148,12 @@ nav {
 		justify-content: space-between;
 		width: 90%;
 		height: 100%;
-		padding: 1.2em;
+		padding: 1em;
 		// z-index: -1;
 		// overflow: hidden;
 		&__cardone {
 			width: 90%;
-			height: 45%;
+			height: 47%;
 			padding: 2em;
 			display: flex;
 			flex-direction: column;
@@ -181,14 +182,14 @@ nav {
 				}
 			}
 			&--heading {
-				font-size: 3.8rem;
+				font-size: 3rem;
 				color: var(--color-lightmore);
 				margin-bottom: 0.8em;
 			}
 		}
 		&__cardtwo {
 			width: 90%;
-			height: 45%;
+			height: 47%;
 			padding: 2em;
 			display: flex;
 			flex-direction: column;
