@@ -1,18 +1,26 @@
-body {
-	position: relative;
+main {
 	height: 100%;
-	background-image: url('../img/printer-2847970.jpg');
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: 55% 65%;
-	overflow: hidden;
-	z-index: -10;
-	.shadow {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(39, 39, 39, 0.75);
-		z-index: -5;
+	position: relative;
+	.hero {
+		z-index: -100;
+		&__img {
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+			top: 0;
+			background-image: url('../img/printer-2847970.jpg');
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: 55% 65%;
+		}
+		&__shadow {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: var(--color-darkone);
+			opacity: 0.85;
+		}
 	}
 }
 

@@ -1,19 +1,27 @@
-body {
-  position: relative;
+main {
   height: 100%;
+  position: relative;
+}
+main .hero {
+  z-index: -100;
+}
+main .hero__img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
   background-image: url("../img/printer-2847970.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: 55% 65%;
-  overflow: hidden;
-  z-index: -10;
 }
-body .shadow {
+main .hero__shadow {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(39, 39, 39, 0.75);
-  z-index: -5;
+  height: 100vh;
+  background-color: var(--color-darkone);
+  opacity: 0.85;
 }
 
 section {
@@ -369,48 +377,20 @@ nav .wrapper .burger .hide {
 }
 
 @media (max-width: 576px) {
-  body {
-    background-position: 60% 30%;
-  }
   nav .wrapper {
-    padding: 0em 0.4em;
+    position: relative;
+    padding: 0em 1em;
   }
   nav .wrapper .logo {
-    width: 40%;
-    height: 40%;
-    margin-right: 1.6em;
-  }
-  nav .wrapper .logo a img {
-    width: 28%;
-    height: 28%;
+    width: 36%;
+    height: 36%;
   }
   nav .wrapper .language {
-    left: 17%;
-    width: 15%;
+    width: 10%;
   }
   nav .wrapper .burger {
     position: absolute;
-    right: 5%;
-  }
-  .sectionhome {
-    padding: 5em 0.6em 1em 0.6em;
-  }
-  .sectionhome .cards {
-    width: 100%;
-  }
-  .sectionhome .cards__cardone {
-    padding: 0.8em;
-    height: 48%;
-  }
-  .sectionhome .cards__cardone--text {
-    font-size: 1.2rem;
-  }
-  .sectionhome .cards__cardtwo {
-    padding: 0.8em;
-    height: 48%;
-  }
-  .sectionhome .cards__cardtwo--text {
-    font-size: 1.2rem;
+    right: 40%;
   }
 }
 @media (min-width: 768px) {
