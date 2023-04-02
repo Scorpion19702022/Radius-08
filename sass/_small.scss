@@ -1,18 +1,48 @@
 @media (max-width: 576px) {
 	nav {
 		.wrapper {
-			position: relative;
 			padding: 0em 1em;
+			justify-content: space-around;
 			.logo {
-				width: 36%;
-				height: 36%;
+				position: absolute;
+				left: 5%;
+				width: 40%;
+				height: 40%;
 			}
 			.language {
-				width: 10%;
+				position: absolute;
+				left: 23%;
+				width: 15%;
 			}
 			.burger {
 				position: absolute;
-				right: 40%;
+				right: 4%;
+				z-index: 10;
+			}
+		}
+	}
+	.sectionhome {
+		padding: 4.8em 0.8em 1em 0.8em;
+		.cards {
+			width: 100%;
+			&__cardone {
+				&--img {
+					height: 35%;
+				}
+				&--text {
+					font-size: 1.2rem;
+				}
+			}
+			&__cardtwo {
+				&--img {
+					height: 35%;
+				}
+				&--text {
+					font-size: 1.2rem;
+				}
+				&--btn {
+					margin-top: 1.2em;
+				}
 			}
 		}
 	}

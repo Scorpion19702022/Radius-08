@@ -1,18 +1,17 @@
 main {
 	height: 100%;
 	position: relative;
+	overflow: hidden;
 	.hero {
+		position: fixed;
+		top: 0;
 		z-index: -100;
-		&__img {
-			position: absolute;
-			width: 100%;
-			height: 100vh;
-			top: 0;
-			background-image: url('../img/printer-2847970.jpg');
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: 55% 65%;
-		}
+		width: 100%;
+		height: 100vh;
+		background-image: url('../img/printer-2847970.jpg');
+		// background-attachment: fixed;
+		background-size: cover;
+		background-position: 55% 65%;
 		&__shadow {
 			position: absolute;
 			top: 0;

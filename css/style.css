@@ -1,17 +1,15 @@
 main {
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 main .hero {
+  position: fixed;
+  top: 0;
   z-index: -100;
-}
-main .hero__img {
-  position: absolute;
   width: 100%;
   height: 100vh;
-  top: 0;
   background-image: url("../img/printer-2847970.jpg");
-  background-attachment: fixed;
   background-size: cover;
   background-position: 55% 65%;
 }
@@ -313,8 +311,9 @@ nav .wrapper .burger .hide {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: var(--color-darklightopacity);
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
@@ -357,7 +356,7 @@ nav .wrapper .burger .hide {
   padding: 0.4em 0;
   background-color: var(--color-red);
   border: 0.04em solid var(--color-darkred);
-  border-radius: 0.1em;
+  border-radius: 0.3em;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -378,19 +377,46 @@ nav .wrapper .burger .hide {
 
 @media (max-width: 576px) {
   nav .wrapper {
-    position: relative;
     padding: 0em 1em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .wrapper .logo {
-    width: 36%;
-    height: 36%;
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    height: 40%;
   }
   nav .wrapper .language {
-    width: 10%;
+    position: absolute;
+    left: 23%;
+    width: 15%;
   }
   nav .wrapper .burger {
     position: absolute;
-    right: 40%;
+    right: 4%;
+    z-index: 10;
+  }
+  .sectionhome {
+    padding: 4.8em 0.8em 1em 0.8em;
+  }
+  .sectionhome .cards {
+    width: 100%;
+  }
+  .sectionhome .cards__cardone--img {
+    height: 35%;
+  }
+  .sectionhome .cards__cardone--text {
+    font-size: 1.2rem;
+  }
+  .sectionhome .cards__cardtwo--img {
+    height: 35%;
+  }
+  .sectionhome .cards__cardtwo--text {
+    font-size: 1.2rem;
+  }
+  .sectionhome .cards__cardtwo--btn {
+    margin-top: 1.2em;
   }
 }
 @media (min-width: 768px) {
