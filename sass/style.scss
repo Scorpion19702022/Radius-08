@@ -247,9 +247,8 @@ nav {
 
 .aboutus {
 	height: 100%;
-	padding: 4.2em 2em 2em 2em;
+	padding: 2em 2em 2em 2em;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	.cards {
@@ -262,19 +261,45 @@ nav {
 		.card {
 			margin: 0.8em;
 			padding: 1em;
-			width: 100%;
-			height: 220px;
+			width: 40%;
+			height: 140px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
 			justify-content: space-between;
 			color: var(--color-light);
+			border: 0.04em solid var(--color-darklight);
+			margin-bottom: 1em;
+			i {
+				color: var(--color-red);
+				font-size: 1.8em;
+				margin-bottom: 0.2em;
+			}
+			&__heading {
+				font-size: 2em;
+				font-weight: 300;
+				margin-bottom: 0.4em;
+			}
+			.card__btn {
+				opacity: 0;
+			}
+		}
+		.card__btn {
+			width: 70%;
+			padding: 0.4em 0;
 			background-color: var(--color-red);
-			transition: all 0.2s ease-in-out;
+			border: 0.04em solid var(--color-darkred);
+			border-radius: 0.3em;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
 			&:hover {
-				transform: scale(1.02);
-				box-shadow: 0.6em 0.6em 0em var(--color-darktwo);
+				background-color: var(--color-darkred);
+			}
+			a {
+				text-decoration: none;
+				color: var(--color-light);
+				text-transform: uppercase;
 			}
 		}
 	}
