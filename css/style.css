@@ -377,7 +377,7 @@ nav .wrapper .burger .hide {
 
 .aboutus {
   height: 100%;
-  padding: 2em 2em 2em 2em;
+  padding: 1em 2em 2em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,6 +435,9 @@ nav .wrapper .burger .hide {
   font-size: 2em;
   font-weight: 300;
   margin-bottom: 0.4em;
+}
+.aboutus .cards .card h4 {
+  font-size: 1.2rem;
 }
 .aboutus .cards .card .card__btn {
   opacity: 0;
