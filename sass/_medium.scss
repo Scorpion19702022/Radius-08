@@ -44,12 +44,10 @@
 				justify-content: space-between;
 				transition: transform 0.3s, opacity 1s ease-in-out;
 				&--img {
-					width: 40%;
 					height: 40%;
 					margin-bottom: 0.2em;
 					.imgcardone {
-						width: 160%;
-						height: 160%;
+						width: 50%;
 					}
 				}
 				&--heading {
@@ -61,12 +59,10 @@
 				justify-content: space-between;
 				transition: transform 0.3s, opacity 1s ease-in-out;
 				&--img {
-					width: 40%;
 					height: 40%;
 					margin-bottom: 0.2em;
 					.imgcardtwo {
-						width: 160%;
-						height: 160%;
+						width: 50%;
 					}
 				}
 			}
