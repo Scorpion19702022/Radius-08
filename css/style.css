@@ -121,7 +121,7 @@ nav .wrapper .logo a img {
 nav .wrapper .language {
   position: absolute;
   left: 20%;
-  width: 7%;
+  width: 9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +133,7 @@ nav .wrapper .language a {
   text-decoration: none;
   color: var(--color-light);
 }
-nav .wrapper .language a:focus {
+nav .wrapper .language .red {
   color: var(--color-red);
 }
 nav .wrapper .navbar {
@@ -509,7 +509,7 @@ nav .wrapper .burger .hide {
     height: 25%;
   }
   nav .wrapper .language {
-    width: 5%;
+    width: 7%;
     left: 15%;
   }
   nav .wrapper .navbar {
@@ -586,7 +586,7 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .language {
     left: 15%;
-    width: 5%;
+    width: 7%;
   }
   nav .wrapper .navbar {
     width: 58%;
@@ -611,7 +611,7 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .language {
     left: 12%;
-    width: 4%;
+    width: 6%;
   }
   .sectionhome {
     padding: 6em 2em 2em 2em;
@@ -650,7 +650,7 @@ nav .wrapper .burger .hide {
   }
   nav .wrapper .language {
     left: 10%;
-    width: 2.6%;
+    width: 5%;
   }
   nav .wrapper .navbar {
     width: 50%;

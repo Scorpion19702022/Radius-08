@@ -64,15 +64,15 @@ nav {
 		.language {
 			position: absolute;
 			left: 20%;
-			width: 7%;
+			width: 9%;
 			display: flex;
 			justify-content: space-between;
 			a {
 				text-decoration: none;
 				color: var(--color-light);
-				&:focus {
-					color: var(--color-red);
-				}
+			}
+			.red {
+				color: var(--color-red);
 			}
 		}
 
