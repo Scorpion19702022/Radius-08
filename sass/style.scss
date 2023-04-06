@@ -242,6 +242,26 @@ nav {
 
 // ---- ABOUT US ----
 
+.sectionaboutus {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 6em 2em 2em 2em;
+	.cardabout {
+		width: 45%;
+		height: 40%;
+		&__img {
+			width: 100%;
+			height: 40%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';
