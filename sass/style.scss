@@ -249,14 +249,61 @@ nav {
 	align-items: center;
 	padding: 6em 2em 2em 2em;
 	.cardabout {
+		position: relative;
 		width: 45%;
 		height: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: space-between;
+		margin: 1em;
+		padding: 1.4em;
+		border: 0.02em solid var(--color-red);
+		transition: all 0.2s ease-in;
+		&:hover {
+			transform: scale(1.02);
+			box-shadow: 0.3em 0.3em 0em var(--color-red);
+		}
+		&__heading {
+			font-size: 2.8rem;
+			color: var(--color-light);
+		}
 		&__img {
 			width: 100%;
 			height: 40%;
 			img {
 				width: 100%;
+				height: 100%;
 				object-fit: cover;
+			}
+		}
+		.imganime {
+			width: 100%;
+			height: 40%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.btnanime {
+			position: absolute;
+			width: 70%;
+			bottom: 10%;
+			padding: 0.4em 0;
+			background-color: var(--color-red);
+			border: 0.04em solid var(--color-darkred);
+			border-radius: 0.3em;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+			&:hover {
+				background-color: var(--color-darkred);
+			}
+			a {
+				text-decoration: none;
+				color: var(--color-light);
+				text-transform: uppercase;
 			}
 		}
 	}
