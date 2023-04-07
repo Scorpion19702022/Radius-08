@@ -604,6 +604,18 @@ nav .wrapper .burger .hide {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
+  .sectionaboutus .cardabout__heading {
+    font-size: 3.4rem;
+  }
+  .sectionaboutus .cardabout__text {
+    font-size: 1.8rem;
+  }
+  .sectionaboutus .cardabout__img {
+    height: 50%;
+  }
+  .sectionaboutus .cardabout .imganime {
+    height: 50%;
+  }
   .sectionaboutus .actioncardsaboutus {
     -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg);
