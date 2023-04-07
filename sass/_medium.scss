@@ -68,4 +68,16 @@
 			}
 		}
 	}
+	.sectionaboutus {
+		.cardabout {
+			perspective: 1000px;
+			transform: rotateY(0);
+			opacity: 0;
+			transition: all 1s ease-in-out;
+		}
+		.actioncardsaboutus {
+			transform: rotateY(360deg);
+			opacity: 1;
+		}
+	}
 }

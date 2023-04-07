@@ -405,8 +405,8 @@ nav .wrapper .burger .hide {
   margin: 1em;
   padding: 1.4em;
   border: 0.02em solid var(--color-red);
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.02s ease-in;
+  transition: all 0.02s ease-in;
 }
 .sectionaboutus .cardabout:hover {
   -webkit-transform: scale(1.02);
@@ -594,6 +594,20 @@ nav .wrapper .burger .hide {
   }
   .sectionhome .cards__cardtwo--img .imgcardtwo {
     width: 50%;
+  }
+  .sectionaboutus .cardabout {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .sectionaboutus .actioncardsaboutus {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    opacity: 1;
   }
 }
 @media (min-width: 992px) {
