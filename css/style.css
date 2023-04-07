@@ -502,6 +502,20 @@ nav .wrapper .burger .hide {
   .sectionhome .cards__cardtwo--btn {
     margin-top: 1.2em;
   }
+  .sectionaboutus {
+    height: 100%;
+  }
+  .sectionaboutus .cardabout {
+    width: 100%;
+    height: 500px;
+    margin: 0em 0em 1.8em 0em;
+  }
+  .sectionaboutus .cardabout__heading {
+    font-size: 3rem;
+  }
+  .sectionaboutus .cardabout__text {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 768px) {
   nav .wrapper {

@@ -46,4 +46,19 @@
 			}
 		}
 	}
+	.sectionaboutus {
+		// flex-direction: column;
+		height: 100%;
+		.cardabout {
+			width: 100%;
+			height: 500px;
+			margin: 0em 0em 1.8em 0em;
+			&__heading {
+				font-size: 3rem;
+			}
+			&__text {
+				font-size: 1.8rem;
+			}
+		}
+	}
 }
