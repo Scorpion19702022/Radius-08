@@ -43,4 +43,19 @@
 			}
 		}
 	}
+
+	.sectionaboutus {
+		padding: 6em 1em 1em 1em;
+		flex-direction: row;
+		.cardabout {
+			width: 20%;
+			height: 70%;
+			&__img {
+				height: 50%;
+			}
+			.imganime {
+				height: 50%;
+			}
+		}
+	}
 }

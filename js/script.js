@@ -40,10 +40,10 @@ const loadCards = () => {
 	}, 500)
 	setTimeout(() => {
 		cardAboutTwo.classList.add('actioncardsaboutus')
-	}, 1500)
+	}, 1000)
 	setTimeout(() => {
 		cardAboutThree.classList.add('actioncardsaboutus')
-	}, 1000)
+	}, 1500)
 	setTimeout(() => {
 		cardAboutFour.classList.add('actioncardsaboutus')
 	}, 2000)

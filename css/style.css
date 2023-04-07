@@ -735,4 +735,21 @@ nav .wrapper .burger .hide {
   .sectionhome .cards__cardtwo--text {
     font-size: 1.8rem;
   }
+  .sectionaboutus {
+    padding: 6em 1em 1em 1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sectionaboutus .cardabout {
+    width: 20%;
+    height: 70%;
+  }
+  .sectionaboutus .cardabout__img {
+    height: 50%;
+  }
+  .sectionaboutus .cardabout .imganime {
+    height: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
