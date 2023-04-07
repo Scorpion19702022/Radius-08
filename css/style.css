@@ -685,6 +685,16 @@ nav .wrapper .burger .hide {
   .sectionhome .cards__cardtwo--text {
     font-size: 1.8rem;
   }
+  .sectionaboutus .cardabout {
+    width: 46%;
+    height: 45%;
+  }
+  .sectionaboutus .cardabout__img {
+    height: 57%;
+  }
+  .sectionaboutus .cardabout .imganime {
+    height: 57%;
+  }
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {

@@ -40,4 +40,16 @@
 			}
 		}
 	}
+	.sectionaboutus {
+		.cardabout {
+			width: 46%;
+			height: 45%;
+			&__img {
+				height: 57%;
+			}
+			.imganime {
+				height: 57%;
+			}
+		}
+	}
 }
