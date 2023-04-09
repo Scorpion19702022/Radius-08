@@ -344,9 +344,14 @@ nav {
 			justify-content: space-between;
 			align-items: flex-end;
 			img {
-				width: 47%;
+				width: 45%;
 				height: 100%;
 				object-fit: cover;
+				transform: scale(0);
+				transition: transform 0.7s ease-in-out;
+			}
+			.actionoffer {
+				transform: scale(1);
 			}
 		}
 	}
