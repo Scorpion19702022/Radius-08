@@ -405,10 +405,10 @@ nav .wrapper .burger .hide {
   margin: 1em;
   padding: 1.4em;
   border: 0.02em solid var(--color-red);
-  -webkit-transition: scale 0.02s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-  transition: scale 0.02s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-  transition: scale 0.02s ease-in-out, box-shadow 0.2s ease-in-out;
-  transition: scale 0.02s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 .sectionaboutus .cardabout:hover {
   -webkit-transform: scale(1.02);
