@@ -524,8 +524,8 @@ nav .wrapper .burger .hide {
     position: relative;
   }
   nav .wrapper .logo a img {
-    width: 25%;
-    height: 25%;
+    width: 24.7%;
+    height: 24.7%;
   }
   nav .wrapper .language {
     width: 7%;
@@ -628,8 +628,8 @@ nav .wrapper .burger .hide {
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {
-    width: 23%;
-    height: 23%;
+    width: 22%;
+    height: 22%;
   }
   nav .wrapper .language {
     left: 15%;
@@ -653,8 +653,8 @@ nav .wrapper .burger .hide {
 }
 @media (min-width: 1200px) {
   nav .wrapper .logo {
-    width: 25%;
-    height: 25%;
+    width: 24%;
+    height: 24%;
   }
   nav .wrapper .language {
     left: 12%;
@@ -702,8 +702,8 @@ nav .wrapper .burger .hide {
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {
-    max-width: 18%;
-    max-height: 18%;
+    max-width: 16%;
+    max-height: 16%;
   }
   nav .wrapper .language {
     left: 10%;
