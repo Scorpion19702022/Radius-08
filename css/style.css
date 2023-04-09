@@ -461,6 +461,11 @@ nav .wrapper .burger .hide {
   text-transform: uppercase;
 }
 
+.sectionoffer {
+  height: 100%;
+  padding: 6em 2em 2em 2em;
+}
+
 @media (max-width: 576px) {
   nav .wrapper {
     padding: 0em 1em;
