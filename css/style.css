@@ -405,8 +405,10 @@ nav .wrapper .burger .hide {
   margin: 1em;
   padding: 1.4em;
   border: 0.02em solid var(--color-red);
-  -webkit-transition: all 0.02s ease-in;
-  transition: all 0.02s ease-in;
+  -webkit-transition: scale 0.02s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: scale 0.02s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: scale 0.02s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: scale 0.02s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 .sectionaboutus .cardabout:hover {
   -webkit-transform: scale(1.02);
@@ -601,8 +603,10 @@ nav .wrapper .burger .hide {
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
     opacity: 0;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .sectionaboutus .cardabout__heading {
     font-size: 3.4rem;
