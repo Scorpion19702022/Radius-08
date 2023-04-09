@@ -73,14 +73,24 @@ const handleNav = () => {
 // ------------------------------------------
 
 const scrollOffer = () => {
-	if (window.scrollY >= 800) {
-		imgOfferOne.classList.add('actionoffer')
-		imgOfferTwo.classList.add('actionoffer')
+	// console.log(window.scrollY)
+	if (window.scrollY >= 625) {
+		imgOfferOne.classList.add('actionofferzero')
+		imgOfferTwo.classList.add('actionofferzero')
 	} else {
-		imgOfferOne.classList.remove('actionoffer')
-		imgOfferTwo.classList.remove('actionoffer')
+		imgOfferOne.classList.remove('actionofferzero')
+		imgOfferTwo.classList.remove('actionofferzero')
+	}
+	if (window.scrollY >= 880) {
+		imgOfferOne.classList.add('actionofferone')
+		imgOfferTwo.classList.add('actionofferone')
+	} else {
+		imgOfferOne.classList.remove('actionofferone')
+		imgOfferTwo.classList.remove('actionofferone')
 	}
 }
+
+scrollOffer()
 
 // ------------------------------------------
 

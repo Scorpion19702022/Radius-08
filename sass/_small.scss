@@ -22,6 +22,7 @@
 		}
 	}
 	.sectionhome {
+		height: 100vh;
 		padding: 4.8em 0.8em 1em 0.8em;
 		.cards {
 			width: 100%;
@@ -58,6 +59,29 @@
 			}
 			&__text {
 				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.sectionoffer {
+		padding: 4em 2em 2em 2em;
+		.offer {
+			&__heading {
+				font-size: 3rem;
+			}
+			&__list {
+				ul {
+					li {
+						margin-bottom: 1.6em;
+						padding-bottom: 0.6em;
+						font-size: 1.3rem;
+					}
+				}
+			}
+			&__img {
+				.actionofferzero {
+					transform: scale(1);
+				}
 			}
 		}
 	}

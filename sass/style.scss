@@ -347,10 +347,12 @@ nav {
 				width: 45%;
 				height: 100%;
 				object-fit: cover;
+				border: 0.02em solid var(--color-red);
+				box-shadow: 0.1em 0.1em 0em var(--color-red);
 				transform: scale(0);
 				transition: transform 0.7s ease-in-out;
 			}
-			.actionoffer {
+			.actionofferone {
 				transform: scale(1);
 			}
 		}

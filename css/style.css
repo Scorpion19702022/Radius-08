@@ -514,6 +514,9 @@ nav .wrapper .burger .hide {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 0.02em solid var(--color-red);
+  -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
+          box-shadow: 0.1em 0.1em 0em var(--color-red);
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: -webkit-transform 0.7s ease-in-out;
@@ -521,7 +524,7 @@ nav .wrapper .burger .hide {
   transition: transform 0.7s ease-in-out;
   transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
-.sectionoffer .offer__img .actionoffer {
+.sectionoffer .offer__img .actionofferone {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -549,6 +552,7 @@ nav .wrapper .burger .hide {
     z-index: 10;
   }
   .sectionhome {
+    height: 100vh;
     padding: 4.8em 0.8em 1em 0.8em;
   }
   .sectionhome .cards {
@@ -582,6 +586,21 @@ nav .wrapper .burger .hide {
   }
   .sectionaboutus .cardabout__text {
     font-size: 1.8rem;
+  }
+  .sectionoffer {
+    padding: 4em 2em 2em 2em;
+  }
+  .sectionoffer .offer__heading {
+    font-size: 3rem;
+  }
+  .sectionoffer .offer__list ul li {
+    margin-bottom: 1.6em;
+    padding-bottom: 0.6em;
+    font-size: 1.3rem;
+  }
+  .sectionoffer .offer__img .actionofferzero {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @media (min-width: 768px) {
