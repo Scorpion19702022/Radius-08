@@ -725,6 +725,22 @@ nav .wrapper .burger .hide {
             transform: rotateY(360deg);
     opacity: 1;
   }
+  .sectionoffer .offer {
+    padding: 0em 2em;
+  }
+  .sectionoffer .offer__text {
+    margin-bottom: 2em;
+  }
+  .sectionoffer .offer__text--heading {
+    font-size: 3.6rem;
+  }
+  .sectionoffer .offer__text--list ul li {
+    font-size: 2rem;
+  }
+  .sectionoffer .offer__img img {
+    -webkit-box-shadow: 0.3em 0.3em 0em var(--color-red);
+            box-shadow: 0.3em 0.3em 0em var(--color-red);
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {

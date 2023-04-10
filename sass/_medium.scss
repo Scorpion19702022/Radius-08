@@ -92,4 +92,27 @@
 			opacity: 1;
 		}
 	}
+	.sectionoffer {
+		.offer {
+			padding: 0em 2em;
+			&__text {
+				margin-bottom: 2em;
+				&--heading {
+					font-size: 3.6rem;
+				}
+				&--list {
+					ul {
+						li {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+			&__img {
+				img {
+					box-shadow: 0.3em 0.3em 0em var(--color-red);
+				}
+			}
+		}
+	}
 }
