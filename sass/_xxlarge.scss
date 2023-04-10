@@ -58,4 +58,27 @@
 			}
 		}
 	}
+	.sectionoffer {
+		.offer {
+			&__text {
+				&--heading {
+					font-size: 4.6rem;
+				}
+				&--list {
+					ul {
+						li {
+							font-size: 2.2rem;
+							margin-bottom: 0.6em;
+						}
+					}
+				}
+			}
+			&__img {
+				width: 30%;
+				img {
+					height: 45%;
+				}
+			}
+		}
+	}
 }
