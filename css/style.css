@@ -766,6 +766,12 @@ nav .wrapper .burger .hide {
   .sectionhome .cards__cardtwo--img {
     margin-bottom: 1.2em;
   }
+  .sectionoffer .offer__text {
+    margin-bottom: 4em;
+  }
+  .sectionoffer .offer__text--list ul li {
+    margin-bottom: 0.6em;
+  }
 }
 @media (min-width: 1200px) {
   nav .wrapper .logo {

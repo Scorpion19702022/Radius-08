@@ -88,6 +88,13 @@ const scrollOffer = () => {
 		imgOfferOne.classList.remove('actionofferone')
 		imgOfferTwo.classList.remove('actionofferone')
 	}
+	// if (window.scrollY >= 1930) {
+	// 	imgOfferOne.classList.add('actionoffertwo')
+	// 	imgOfferTwo.classList.add('actionoffertwo')
+	// } else {
+	// 	imgOfferOne.classList.remove('actionoffertwo')
+	// 	imgOfferTwo.classList.remove('actionoffertwo')
+	// }
 }
 
 scrollOffer()

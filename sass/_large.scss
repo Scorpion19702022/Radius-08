@@ -36,4 +36,18 @@
 			}
 		}
 	}
+	.sectionoffer {
+		.offer {
+			&__text {
+				margin-bottom: 4em;
+				&--list {
+					ul {
+						li {
+							margin-bottom: 0.6em;
+						}
+					}
+				}
+			}
+		}
+	}
 }
