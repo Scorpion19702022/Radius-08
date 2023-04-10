@@ -321,20 +321,26 @@ nav {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		&__heading {
-			font-size: 2.8rem;
-			color: var(--color-light);
-			margin-bottom: 2rem;
-		}
-		&__list {
-			color: var(--color-light);
-			margin-bottom: 2rem;
-			ul {
-				li {
-					font-size: 1.8rem;
-					margin-bottom: 1.2em;
-					padding-bottom: 0.4em;
-					border-bottom: 0.02em solid var(--color-red);
+		&__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			&--heading {
+				font-size: 2.8rem;
+				color: var(--color-light);
+				margin-bottom: 3rem;
+			}
+			&--list {
+				width: 100%;
+				color: var(--color-light);
+				ul {
+					li {
+						font-size: 1.8rem;
+						margin-bottom: 1.2em;
+						padding-bottom: 0.4em;
+						border-bottom: 0.02em solid var(--color-red);
+					}
 				}
 			}
 		}

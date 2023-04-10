@@ -64,17 +64,20 @@
 	}
 
 	.sectionoffer {
-		padding: 4em 2em 2em 2em;
+		padding: 2em 2em 2em 2em;
 		.offer {
-			&__heading {
-				font-size: 3rem;
-			}
-			&__list {
-				ul {
-					li {
-						margin-bottom: 1.6em;
-						padding-bottom: 0.6em;
-						font-size: 1.3rem;
+			&__text {
+				&--heading {
+					font-size: 2.4rem;
+					margin-bottom: 1em;
+				}
+				&--list {
+					ul {
+						li {
+							margin-bottom: 1.6em;
+							padding-bottom: 0.6em;
+							font-size: 1.2rem;
+						}
 					}
 				}
 			}

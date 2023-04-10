@@ -73,8 +73,8 @@ const handleNav = () => {
 // ------------------------------------------
 
 const scrollOffer = () => {
-	// console.log(window.scrollY)
-	if (window.scrollY >= 625) {
+	console.log(window.scrollY)
+	if (window.scrollY >= 560) {
 		imgOfferOne.classList.add('actionofferzero')
 		imgOfferTwo.classList.add('actionofferzero')
 	} else {
