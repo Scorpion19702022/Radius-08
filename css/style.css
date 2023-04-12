@@ -544,6 +544,117 @@ nav .wrapper .burger .hide {
           transform: scale(1);
 }
 
+.gallery {
+  height: 100vh;
+  padding: 6em 2em 2em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.gallery .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.gallery .text__info {
+  font-size: 2.2rem;
+}
+.gallery .photo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 30%;
+  cursor: pointer;
+}
+.gallery .photo__main {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .photo__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.8rem;
+  color: var(--color-light);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.gallery .photo__shadow {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  background-color: var(--color-darklightopacity);
+}
+.gallery .video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 30%;
+  cursor: pointer;
+}
+.gallery .video__main {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .video__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.8rem;
+  color: var(--color-light);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.gallery .video__shadow {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  background-color: var(--color-darklightopacity);
+}
+
 @media (max-width: 576px) {
   nav .wrapper {
     padding: 0em 1em;
