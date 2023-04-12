@@ -384,80 +384,88 @@ nav {
 			font-size: 2.2rem;
 		}
 	}
-	.photo {
-		position: relative;
+	.forgallery {
+		width: 100%;
+		height: 70%;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
 		align-items: center;
-		width: 70%;
-		height: 30%;
-		opacity: 0;
-		cursor: pointer;
-		transition: opacity 0.5s ease-in-out;
-		&:hover {
-			border: 0.02em solid var(--color-red);
-			box-shadow: 0.1em 0.1em 0em var(--color-red);
-		}
-		&__main {
+		justify-content: space-between;
+		.photo {
 			position: relative;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+			height: 43%;
+			opacity: 0;
+			cursor: pointer;
+			transition: opacity 0.5s ease-in-out;
+			&:hover {
+				border: 0.02em solid var(--color-red);
+				box-shadow: 0.1em 0.1em 0em var(--color-red);
+			}
+			&__main {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&__text {
+				position: absolute;
+				font-size: 2.8rem;
+				color: var(--color-light);
+				z-index: 1;
+			}
+			&__shadow {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				background-color: var(--color-darklightopacity);
+			}
 		}
-		&__text {
-			position: absolute;
-			font-size: 2.8rem;
-			color: var(--color-light);
-			z-index: 1;
+		.actionphotomain {
+			opacity: 1;
 		}
-		&__shadow {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			background-color: var(--color-darklightopacity);
-		}
-	}
-	.actionphotomain {
-		opacity: 1;
-	}
 
-	.video {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 70%;
-		height: 30%;
-		opacity: 0;
-		cursor: pointer;
-		transition: opacity 0.5s ease-in-out;
-		&:hover {
-			border: 0.02em solid var(--color-red);
-			box-shadow: 0.1em 0.1em 0em var(--color-red);
-		}
-		&__main {
+		.video {
 			position: relative;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+			height: 43%;
+			opacity: 0;
+			cursor: pointer;
+			transition: opacity 0.5s ease-in-out;
+			&:hover {
+				border: 0.02em solid var(--color-red);
+				box-shadow: 0.1em 0.1em 0em var(--color-red);
+			}
+			&__main {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&__text {
+				position: absolute;
+				font-size: 2.8rem;
+				color: var(--color-light);
+				z-index: 1;
+			}
+			&__shadow {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				background-color: var(--color-darklightopacity);
+			}
 		}
-		&__text {
-			position: absolute;
-			font-size: 2.8rem;
-			color: var(--color-light);
-			z-index: 1;
+		.actionvideomain {
+			opacity: 1;
 		}
-		&__shadow {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			background-color: var(--color-darklightopacity);
-		}
-	}
-	.actionvideomain {
-		opacity: 1;
 	}
 }
 

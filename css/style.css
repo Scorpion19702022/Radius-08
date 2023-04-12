@@ -576,7 +576,24 @@ nav .wrapper .burger .hide {
 .gallery .text__info {
   font-size: 2.2rem;
 }
-.gallery .photo {
+.gallery .forgallery {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery .forgallery .photo {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,41 +605,41 @@ nav .wrapper .burger .hide {
       -ms-flex-align: center;
           align-items: center;
   width: 70%;
-  height: 30%;
+  height: 43%;
   opacity: 0;
   cursor: pointer;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.gallery .photo:hover {
+.gallery .forgallery .photo:hover {
   border: 0.02em solid var(--color-red);
   -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
           box-shadow: 0.1em 0.1em 0em var(--color-red);
 }
-.gallery .photo__main {
+.gallery .forgallery .photo__main {
   position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .photo__text {
+.gallery .forgallery .photo__text {
   position: absolute;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
 }
-.gallery .photo__shadow {
+.gallery .forgallery .photo__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
 }
-.gallery .actionphotomain {
+.gallery .forgallery .actionphotomain {
   opacity: 1;
 }
-.gallery .video {
+.gallery .forgallery .video {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,38 +651,38 @@ nav .wrapper .burger .hide {
       -ms-flex-align: center;
           align-items: center;
   width: 70%;
-  height: 30%;
+  height: 43%;
   opacity: 0;
   cursor: pointer;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.gallery .video:hover {
+.gallery .forgallery .video:hover {
   border: 0.02em solid var(--color-red);
   -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
           box-shadow: 0.1em 0.1em 0em var(--color-red);
 }
-.gallery .video__main {
+.gallery .forgallery .video__main {
   position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .video__text {
+.gallery .forgallery .video__text {
   position: absolute;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
 }
-.gallery .video__shadow {
+.gallery .forgallery .video__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
 }
-.gallery .actionvideomain {
+.gallery .forgallery .actionvideomain {
   opacity: 1;
 }
 
