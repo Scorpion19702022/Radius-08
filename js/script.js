@@ -22,6 +22,9 @@ const cardAboutFour = document.querySelector('.aboutfour')
 const imgOfferOne = document.querySelector('.offerimgone')
 const imgOfferTwo = document.querySelector('.offerimgtwo')
 
+const photoInGallery = document.querySelector('.photo')
+const videoInGallery = document.querySelector('.video')
+
 body.onload = function () {
 	loadCards()
 }
@@ -52,6 +55,12 @@ const loadCards = () => {
 	setTimeout(() => {
 		cardAboutFour.classList.add('actioncardsaboutus')
 	}, 2000)
+	setTimeout(() => {
+		photoInGallery.classList.add('actionphotomain')
+	}, 800)
+	setTimeout(() => {
+		videoInGallery.classList.add('actionvideomain')
+	}, 1600)
 }
 
 // ------------------------------------------

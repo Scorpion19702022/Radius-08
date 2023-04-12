@@ -589,7 +589,10 @@ nav .wrapper .burger .hide {
           align-items: center;
   width: 70%;
   height: 30%;
+  opacity: 0;
   cursor: pointer;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .gallery .photo:hover {
   border: 0.02em solid var(--color-red);
@@ -616,6 +619,9 @@ nav .wrapper .burger .hide {
   top: 0;
   background-color: var(--color-darklightopacity);
 }
+.gallery .actionphotomain {
+  opacity: 1;
+}
 .gallery .video {
   position: relative;
   display: -webkit-box;
@@ -629,7 +635,10 @@ nav .wrapper .burger .hide {
           align-items: center;
   width: 70%;
   height: 30%;
+  opacity: 0;
   cursor: pointer;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .gallery .video:hover {
   border: 0.02em solid var(--color-red);
@@ -655,6 +664,9 @@ nav .wrapper .burger .hide {
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
+}
+.gallery .actionvideomain {
+  opacity: 1;
 }
 
 @media (max-width: 576px) {

@@ -391,7 +391,9 @@ nav {
 		align-items: center;
 		width: 70%;
 		height: 30%;
+		opacity: 0;
 		cursor: pointer;
+		transition: opacity 0.5s ease-in-out;
 		&:hover {
 			border: 0.02em solid var(--color-red);
 			box-shadow: 0.1em 0.1em 0em var(--color-red);
@@ -416,6 +418,10 @@ nav {
 			background-color: var(--color-darklightopacity);
 		}
 	}
+	.actionphotomain {
+		opacity: 1;
+	}
+
 	.video {
 		position: relative;
 		display: flex;
@@ -423,7 +429,9 @@ nav {
 		align-items: center;
 		width: 70%;
 		height: 30%;
+		opacity: 0;
 		cursor: pointer;
+		transition: opacity 0.5s ease-in-out;
 		&:hover {
 			border: 0.02em solid var(--color-red);
 			box-shadow: 0.1em 0.1em 0em var(--color-red);
@@ -447,6 +455,9 @@ nav {
 			top: 0;
 			background-color: var(--color-darklightopacity);
 		}
+	}
+	.actionvideomain {
+		opacity: 1;
 	}
 }
 
