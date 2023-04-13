@@ -576,7 +576,7 @@ nav .wrapper .burger .hide {
 .gallery .text__info {
   font-size: 2.2rem;
 }
-.gallery .forgallery {
+.gallery .fotogallery {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -593,7 +593,7 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.gallery .forgallery .photo {
+.gallery .fotogallery .photo {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,35 +611,35 @@ nav .wrapper .burger .hide {
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.gallery .forgallery .photo:hover {
+.gallery .fotogallery .photo:hover {
   border: 0.02em solid var(--color-red);
   -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
           box-shadow: 0.1em 0.1em 0em var(--color-red);
 }
-.gallery .forgallery .photo__main {
+.gallery .fotogallery .photo__main {
   position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .forgallery .photo__text {
+.gallery .fotogallery .photo__text {
   position: absolute;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
 }
-.gallery .forgallery .photo__shadow {
+.gallery .fotogallery .photo__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
 }
-.gallery .forgallery .actionphotomain {
+.gallery .fotogallery .actionphotomain {
   opacity: 1;
 }
-.gallery .forgallery .video {
+.gallery .fotogallery .video {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,32 +657,32 @@ nav .wrapper .burger .hide {
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.gallery .forgallery .video:hover {
+.gallery .fotogallery .video:hover {
   border: 0.02em solid var(--color-red);
   -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
           box-shadow: 0.1em 0.1em 0em var(--color-red);
 }
-.gallery .forgallery .video__main {
+.gallery .fotogallery .video__main {
   position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .forgallery .video__text {
+.gallery .fotogallery .video__text {
   position: absolute;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
 }
-.gallery .forgallery .video__shadow {
+.gallery .fotogallery .video__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
 }
-.gallery .forgallery .actionvideomain {
+.gallery .fotogallery .actionvideomain {
   opacity: 1;
 }
 
@@ -759,6 +759,18 @@ nav .wrapper .burger .hide {
   .sectionoffer .offer__img .actionofferzero {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  .gallery .text {
+    width: 100%;
+  }
+  .gallery .text__info {
+    font-size: 1.8rem;
+  }
+  .gallery .fotogallery .photo {
+    width: 100%;
+  }
+  .gallery .fotogallery .video {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {

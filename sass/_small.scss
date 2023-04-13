@@ -88,4 +88,21 @@
 			}
 		}
 	}
+
+	.gallery {
+		.text {
+			width: 100%;
+			&__info {
+				font-size: 1.8rem;
+			}
+		}
+		.fotogallery {
+			.photo {
+				width: 100%;
+			}
+			.video {
+				width: 100%;
+			}
+		}
+	}
 }
