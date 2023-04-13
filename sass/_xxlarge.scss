@@ -81,4 +81,23 @@
 			}
 		}
 	}
+
+	.sectiongallery {
+		.text {
+			width: 50%;
+		}
+		.fotogallery {
+			display: flex;
+			flex-direction: row;
+			width: 90%;
+			.photo {
+				width: 47%;
+				height: 70%;
+			}
+			.video {
+				width: 47%;
+				height: 70%;
+			}
+		}
+	}
 }

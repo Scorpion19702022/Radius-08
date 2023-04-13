@@ -55,12 +55,20 @@
 		.fotogallery {
 			.photo {
 				height: 46%;
+				&:hover {
+					border: 0.02em solid var(--color-red);
+					box-shadow: 0.25em 0.25em 0em var(--color-red);
+				}
 				&__text {
 					font-size: 4rem;
 				}
 			}
 			.video {
 				height: 46%;
+				&:hover {
+					border: 0.02em solid var(--color-red);
+					box-shadow: 0.25em 0.25em 0em var(--color-red);
+				}
 				&__text {
 					font-size: 4rem;
 				}
