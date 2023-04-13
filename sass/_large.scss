@@ -50,4 +50,21 @@
 			}
 		}
 	}
+
+	.sectiongallery {
+		.fotogallery {
+			.photo {
+				height: 46%;
+				&__text {
+					font-size: 4rem;
+				}
+			}
+			.video {
+				height: 46%;
+				&__text {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
 }

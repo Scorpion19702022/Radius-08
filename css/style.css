@@ -544,7 +544,7 @@ nav .wrapper .burger .hide {
           transform: scale(1);
 }
 
-.gallery {
+.sectiongallery {
   height: 100vh;
   padding: 6em 2em 2em 2em;
   display: -webkit-box;
@@ -560,7 +560,7 @@ nav .wrapper .burger .hide {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.gallery .text {
+.sectiongallery .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,10 +573,10 @@ nav .wrapper .burger .hide {
           align-items: center;
   text-align: center;
 }
-.gallery .text__info {
+.sectiongallery .text__info {
   font-size: 2.2rem;
 }
-.gallery .fotogallery {
+.sectiongallery .fotogallery {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -593,7 +593,7 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.gallery .fotogallery .photo {
+.sectiongallery .fotogallery .photo {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,35 +611,35 @@ nav .wrapper .burger .hide {
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.gallery .fotogallery .photo:hover {
+.sectiongallery .fotogallery .photo:hover {
   border: 0.02em solid var(--color-red);
   -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
           box-shadow: 0.1em 0.1em 0em var(--color-red);
 }
-.gallery .fotogallery .photo__main {
+.sectiongallery .fotogallery .photo__main {
   position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .fotogallery .photo__text {
+.sectiongallery .fotogallery .photo__text {
   position: absolute;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
 }
-.gallery .fotogallery .photo__shadow {
+.sectiongallery .fotogallery .photo__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
 }
-.gallery .fotogallery .actionphotomain {
+.sectiongallery .fotogallery .actionphotomain {
   opacity: 1;
 }
-.gallery .fotogallery .video {
+.sectiongallery .fotogallery .video {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,32 +657,32 @@ nav .wrapper .burger .hide {
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-.gallery .fotogallery .video:hover {
+.sectiongallery .fotogallery .video:hover {
   border: 0.02em solid var(--color-red);
   -webkit-box-shadow: 0.1em 0.1em 0em var(--color-red);
           box-shadow: 0.1em 0.1em 0em var(--color-red);
 }
-.gallery .fotogallery .video__main {
+.sectiongallery .fotogallery .video__main {
   position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery .fotogallery .video__text {
+.sectiongallery .fotogallery .video__text {
   position: absolute;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
 }
-.gallery .fotogallery .video__shadow {
+.sectiongallery .fotogallery .video__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: var(--color-darklightopacity);
 }
-.gallery .fotogallery .actionvideomain {
+.sectiongallery .fotogallery .actionvideomain {
   opacity: 1;
 }
 
@@ -760,16 +760,16 @@ nav .wrapper .burger .hide {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .gallery .text {
+  .sectiongallery .text {
     width: 100%;
   }
-  .gallery .text__info {
+  .sectiongallery .text__info {
     font-size: 1.8rem;
   }
-  .gallery .fotogallery .photo {
+  .sectiongallery .fotogallery .photo {
     width: 100%;
   }
-  .gallery .fotogallery .video {
+  .sectiongallery .fotogallery .video {
     width: 100%;
   }
 }
@@ -925,6 +925,18 @@ nav .wrapper .burger .hide {
   }
   .sectionoffer .offer__text--list ul li {
     margin-bottom: 0.6em;
+  }
+  .sectiongallery .fotogallery .photo {
+    height: 46%;
+  }
+  .sectiongallery .fotogallery .photo__text {
+    font-size: 4rem;
+  }
+  .sectiongallery .fotogallery .video {
+    height: 46%;
+  }
+  .sectiongallery .fotogallery .video__text {
+    font-size: 4rem;
   }
 }
 @media (min-width: 1200px) {
