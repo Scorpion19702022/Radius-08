@@ -25,6 +25,9 @@ const imgOfferTwo = document.querySelector('.offerimgtwo')
 const photoInGallery = document.querySelector('.photo')
 const videoInGallery = document.querySelector('.video')
 
+const viewPhotoSlider = document.querySelector('.photoswiper')
+const xmarkInSliders = document.querySelectorAll('.xmark')
+
 // ------------------------------------------
 
 body.onload = function () {
@@ -118,7 +121,14 @@ const swiper = new Swiper('.sliders', {
 
 // ------------------------------------------
 
+const actionSliders1 = () => {
+	photoInGallery.classList.remove('actionphotomain')
+	videoInGallery.classList.remove('actionvideomain')
+	viewPhotoSlider.classList.add('swiperaction')
+}
+
 // ------------------------------------------
 
 burgerBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', scrollOffer)
+photoInGallery.addEventListener('click', actionSliders1)

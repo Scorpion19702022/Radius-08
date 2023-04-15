@@ -607,10 +607,13 @@ nav .wrapper .burger .hide {
           align-items: center;
   width: 70%;
   height: 43%;
-  opacity: 0;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
   cursor: pointer;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .sectiongallery .fotogallery .photo:hover {
   border: 0.02em solid var(--color-red);
@@ -626,6 +629,17 @@ nav .wrapper .burger .hide {
 }
 .sectiongallery .fotogallery .photo__text {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2.8rem;
   color: var(--color-light);
   z-index: 1;
@@ -638,7 +652,8 @@ nav .wrapper .burger .hide {
   background-color: var(--color-darklightopacity);
 }
 .sectiongallery .fotogallery .actionphotomain {
-  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .sectiongallery .fotogallery .video {
   position: relative;
@@ -653,10 +668,13 @@ nav .wrapper .burger .hide {
           align-items: center;
   width: 70%;
   height: 43%;
-  opacity: 0;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
   cursor: pointer;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .sectiongallery .fotogallery .video:hover {
   border: 0.02em solid var(--color-red);
@@ -684,14 +702,15 @@ nav .wrapper .burger .hide {
   background-color: var(--color-darklightopacity);
 }
 .sectiongallery .fotogallery .actionvideomain {
-  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .sectiongallery .photoswiper {
   position: absolute;
   top: 40%;
   width: 80%;
   height: 40%;
-  opacity: 0;
+  visibility: hidden;
 }
 .sectiongallery .swiper-slide {
   position: relative;
@@ -756,7 +775,7 @@ nav .wrapper .burger .hide {
   bottom: 20%;
 }
 .sectiongallery .swiperaction {
-  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 576px) {

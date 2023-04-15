@@ -399,9 +399,9 @@ nav {
 			align-items: center;
 			width: 70%;
 			height: 43%;
-			opacity: 0;
+			transform: translateX(-150%);
 			cursor: pointer;
-			transition: opacity 0.5s ease-in-out;
+			transition: transform 0.3s ease-in-out;
 			&:hover {
 				border: 0.02em solid var(--color-red);
 				box-shadow: 0.1em 0.1em 0em var(--color-red);
@@ -414,6 +414,11 @@ nav {
 			}
 			&__text {
 				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				font-size: 2.8rem;
 				color: var(--color-light);
 				z-index: 1;
@@ -427,7 +432,7 @@ nav {
 			}
 		}
 		.actionphotomain {
-			opacity: 1;
+			transform: translateX(0);
 		}
 
 		.video {
@@ -437,9 +442,9 @@ nav {
 			align-items: center;
 			width: 70%;
 			height: 43%;
-			opacity: 0;
+			transform: translateX(150%);
 			cursor: pointer;
-			transition: opacity 0.5s ease-in-out;
+			transition: transform 0.3s ease-in-out;
 			&:hover {
 				border: 0.02em solid var(--color-red);
 				box-shadow: 0.1em 0.1em 0em var(--color-red);
@@ -465,7 +470,7 @@ nav {
 			}
 		}
 		.actionvideomain {
-			opacity: 1;
+			transform: translateX(0);
 		}
 	}
 
@@ -474,7 +479,7 @@ nav {
 		top: 40%;
 		width: 80%;
 		height: 40%;
-		opacity: 0;
+		visibility: hidden;
 	}
 
 	.swiper-slide {
@@ -527,7 +532,7 @@ nav {
 		bottom: 20%;
 	}
 	.swiperaction {
-		opacity: 1;
+		visibility: visible;
 	}
 }
 
