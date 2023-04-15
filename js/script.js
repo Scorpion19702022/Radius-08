@@ -28,6 +28,8 @@ const videoInGallery = document.querySelector('.video')
 const viewPhotoSlider = document.querySelector('.photoswiper')
 const xmarkInSliders = document.querySelectorAll('.xmark')
 
+console.log(xmarkInSliders)
+
 // ------------------------------------------
 
 body.onload = function () {
@@ -125,6 +127,13 @@ const actionSliders1 = () => {
 	photoInGallery.classList.remove('actionphotomain')
 	videoInGallery.classList.remove('actionvideomain')
 	viewPhotoSlider.classList.add('swiperaction')
+	xmarkInSliders.forEach(el => {
+		el.addEventListener('click', function () {
+			photoInGallery.classList.add('actionphotomain')
+			videoInGallery.classList.add('actionvideomain')
+			viewPhotoSlider.classList.remove('swiperaction')
+		})
+	})
 }
 
 // ------------------------------------------
