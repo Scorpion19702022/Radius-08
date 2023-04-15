@@ -468,53 +468,66 @@ nav {
 			opacity: 1;
 		}
 	}
-	.boxphoto {
+
+	.photoswiper {
 		position: absolute;
-		width: 80%;
-		height: 60%;
 		top: 40%;
-		z-index: 10;
-		&__slider {
+		width: 80%;
+		height: 40%;
+		opacity: 0;
+	}
+
+	.swiper-slide {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		img {
 			width: 100%;
 			height: 100%;
-			.slider {
-				position: relative;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				img {
-					position: relative;
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
-				&__text {
-					position: absolute;
-					text-align: center;
-					bottom: 1%;
-					width: 100%;
-					padding: 1em;
-					background-color: var(--color-darklightopacity);
-					h3 {
-						font-size: 2rem;
-						font-weight: 100;
-						color: var(--color-light);
-					}
-				}
-				.xmark {
-					position: absolute;
-					top: 5px;
-					right: 5px;
-					font-size: 3rem;
-					cursor: pointer;
-					color: var(--color-darkones);
-					transition: color 0.3s ease-in-out;
-					&:hover {
-						color: var(--color-red);
-					}
-				}
+			object-fit: cover;
+		}
+		h3 {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.4em;
+			bottom: 0;
+			font-size: 3rem;
+			width: 100%;
+			color: var(--color-light);
+			font-weight: 200;
+			background-color: var(--color-darklightopacity);
+		}
+		.xmark {
+			position: absolute;
+			top: 5%;
+			right: 5%;
+			font-size: 4rem;
+			color: var(--color-darkone);
+			cursor: pointer;
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-red);
 			}
 		}
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		color: var(--color-darklight);
+		&:hover {
+			color: var(--color-red);
+		}
+	}
+
+	.swiper-pagination {
+		bottom: 20%;
+	}
+	.swiperaction {
+		opacity: 1;
 	}
 }
 

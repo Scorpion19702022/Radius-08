@@ -25,6 +25,8 @@ const imgOfferTwo = document.querySelector('.offerimgtwo')
 const photoInGallery = document.querySelector('.photo')
 const videoInGallery = document.querySelector('.video')
 
+// ------------------------------------------
+
 body.onload = function () {
 	loadCards()
 }
@@ -97,6 +99,24 @@ const scrollOffer = () => {
 		imgOfferTwo.classList.remove('actionofferone')
 	}
 }
+
+// ------------------------------------------
+
+const swiper = new Swiper('.sliders', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+})
+
+// ------------------------------------------
 
 // ------------------------------------------
 

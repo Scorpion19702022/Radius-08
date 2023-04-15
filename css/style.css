@@ -686,18 +686,14 @@ nav .wrapper .burger .hide {
 .sectiongallery .fotogallery .actionvideomain {
   opacity: 1;
 }
-.sectiongallery .boxphoto {
+.sectiongallery .photoswiper {
   position: absolute;
-  width: 80%;
-  height: 60%;
   top: 40%;
-  z-index: 10;
+  width: 80%;
+  height: 40%;
+  opacity: 0;
 }
-.sectiongallery .boxphoto__slider {
-  width: 100%;
-  height: 100%;
-}
-.sectiongallery .boxphoto__slider .slider {
+.sectiongallery .swiper-slide {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,39 +704,59 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
-.sectiongallery .boxphoto__slider .slider img {
-  position: relative;
+.sectiongallery .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sectiongallery .boxphoto__slider .slider__text {
+.sectiongallery .swiper-slide h3 {
   position: absolute;
-  text-align: center;
-  bottom: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.4em;
+  bottom: 0;
+  font-size: 3rem;
   width: 100%;
-  padding: 1em;
+  color: var(--color-light);
+  font-weight: 200;
   background-color: var(--color-darklightopacity);
 }
-.sectiongallery .boxphoto__slider .slider__text h3 {
-  font-size: 2rem;
-  font-weight: 100;
-  color: var(--color-light);
-}
-.sectiongallery .boxphoto__slider .slider .xmark {
+.sectiongallery .swiper-slide .xmark {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 3rem;
+  top: 5%;
+  right: 5%;
+  font-size: 4rem;
+  color: var(--color-darkone);
   cursor: pointer;
-  color: var(--color-darkones);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-.sectiongallery .boxphoto__slider .slider .xmark:hover {
+.sectiongallery .swiper-slide .xmark:hover {
   color: var(--color-red);
+}
+.sectiongallery .swiper-button-next,
+.sectiongallery .swiper-button-prev {
+  color: var(--color-darklight);
+}
+.sectiongallery .swiper-button-next:hover,
+.sectiongallery .swiper-button-prev:hover {
+  color: var(--color-red);
+}
+.sectiongallery .swiper-pagination {
+  bottom: 20%;
+}
+.sectiongallery .swiperaction {
+  opacity: 1;
 }
 
 @media (max-width: 576px) {
