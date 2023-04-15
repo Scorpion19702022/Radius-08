@@ -545,6 +545,7 @@ nav .wrapper .burger .hide {
 }
 
 .sectiongallery {
+  position: relative;
   height: 100vh;
   padding: 6em 2em 2em 2em;
   display: -webkit-box;
@@ -684,6 +685,62 @@ nav .wrapper .burger .hide {
 }
 .sectiongallery .fotogallery .actionvideomain {
   opacity: 1;
+}
+.sectiongallery .boxphoto {
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  top: 40%;
+  z-index: 10;
+}
+.sectiongallery .boxphoto__slider {
+  width: 100%;
+  height: 100%;
+}
+.sectiongallery .boxphoto__slider .slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sectiongallery .boxphoto__slider .slider img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sectiongallery .boxphoto__slider .slider__text {
+  position: absolute;
+  text-align: center;
+  bottom: 1%;
+  width: 100%;
+  padding: 1em;
+  background-color: var(--color-darklightopacity);
+}
+.sectiongallery .boxphoto__slider .slider__text h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--color-light);
+}
+.sectiongallery .boxphoto__slider .slider .xmark {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--color-darkones);
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.sectiongallery .boxphoto__slider .slider .xmark:hover {
+  color: var(--color-red);
 }
 
 @media (max-width: 576px) {

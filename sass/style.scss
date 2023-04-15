@@ -368,6 +368,7 @@ nav {
 // ---- GALLERY ----
 
 .sectiongallery {
+	position: relative;
 	height: 100vh;
 	padding: 6em 2em 2em 2em;
 	display: flex;
@@ -465,6 +466,54 @@ nav {
 		}
 		.actionvideomain {
 			opacity: 1;
+		}
+	}
+	.boxphoto {
+		position: absolute;
+		width: 80%;
+		height: 60%;
+		top: 40%;
+		z-index: 10;
+		&__slider {
+			width: 100%;
+			height: 100%;
+			.slider {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+				&__text {
+					position: absolute;
+					text-align: center;
+					bottom: 1%;
+					width: 100%;
+					padding: 1em;
+					background-color: var(--color-darklightopacity);
+					h3 {
+						font-size: 2rem;
+						font-weight: 100;
+						color: var(--color-light);
+					}
+				}
+				.xmark {
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					font-size: 3rem;
+					cursor: pointer;
+					color: var(--color-darkones);
+					transition: color 0.3s ease-in-out;
+					&:hover {
+						color: var(--color-red);
+					}
+				}
+			}
 		}
 	}
 }
