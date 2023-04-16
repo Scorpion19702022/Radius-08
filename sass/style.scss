@@ -534,6 +534,56 @@ nav {
 	.swiperaction {
 		visibility: visible;
 	}
+
+	// -----------------------------
+
+	.videoswiper {
+		position: absolute;
+		top: 40%;
+		width: 85%;
+		height: 40%;
+		visibility: hidden;
+	}
+
+	.video {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.xmarkvideo {
+			position: absolute;
+			top: 5%;
+			right: 5%;
+			font-size: 4rem;
+			color: var(--color-darkone);
+			cursor: pointer;
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: var(--color-red);
+			}
+		}
+	}
+
+	.next,
+	.prev {
+		color: var(--color-darklight);
+		&:hover {
+			color: var(--color-red);
+		}
+	}
+
+	.swiper-pagination {
+		bottom: 20%;
+	}
+	.videoaction {
+		visibility: visible;
+	}
 }
 
 @import './small';

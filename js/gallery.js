@@ -16,6 +16,9 @@ const videoInGallery = document.querySelector('.video')
 const viewPhotoSlider = document.querySelector('.photoswiper')
 const xmarkInSliders = document.querySelectorAll('.xmark')
 
+const viewVideoSlider = document.querySelector('.videoswiper')
+const xmarkInVideo = document.querySelectorAll('.xmarkvideo')
+
 // --------------------------------------
 
 body.onload = function () {
@@ -47,7 +50,7 @@ const handleNav = () => {
 
 // ------------------------------------------
 
-const swiper = new Swiper('.sliders', {
+const swiper = new Swiper('.sliders, .videosswipers', {
 	slidesPerView: 1,
 	spaceBetween: 30,
 	loop: true,
@@ -76,5 +79,21 @@ const actionSliders1 = () => {
 	})
 }
 
+// ------------------------------------------
+
+const actionSliders2 = () => {
+	photoInGallery.classList.remove('actionphotomain')
+	videoInGallery.classList.remove('actionvideomain')
+	viewVideoSlider.classList.add('videoaction')
+	xmarkInVideo.forEach(el => {
+		el.addEventListener('click', function () {
+			photoInGallery.classList.add('actionphotomain')
+			videoInGallery.classList.add('actionvideomain')
+			viewVideoSlider.classList.remove('videoaction')
+		})
+	})
+}
+
 burgerBtn.addEventListener('click', handleNav)
 photoInGallery.addEventListener('click', actionSliders1)
+videoInGallery.addEventListener('click', actionSliders2)

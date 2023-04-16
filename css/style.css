@@ -777,6 +777,59 @@ nav .wrapper .burger .hide {
 .sectiongallery .swiperaction {
   visibility: visible;
 }
+.sectiongallery .videoswiper {
+  position: absolute;
+  top: 40%;
+  width: 85%;
+  height: 40%;
+  visibility: hidden;
+}
+.sectiongallery .video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.sectiongallery .video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sectiongallery .video .xmarkvideo {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 4rem;
+  color: var(--color-darkone);
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.sectiongallery .video .xmarkvideo:hover {
+  color: var(--color-red);
+}
+.sectiongallery .next,
+.sectiongallery .prev {
+  color: var(--color-darklight);
+}
+.sectiongallery .next:hover,
+.sectiongallery .prev:hover {
+  color: var(--color-red);
+}
+.sectiongallery .swiper-pagination {
+  bottom: 20%;
+}
+.sectiongallery .videoaction {
+  visibility: visible;
+}
 
 @media (max-width: 576px) {
   nav .wrapper {
@@ -872,6 +925,12 @@ nav .wrapper .burger .hide {
   }
   .sectiongallery .swiper-pagination {
     bottom: 17%;
+  }
+  .sectiongallery .video .xmarkvideo {
+    font-size: 2em;
+  }
+  .sectiongallery .pagination {
+    bottom: 30%;
   }
 }
 @media (min-width: 768px) {
