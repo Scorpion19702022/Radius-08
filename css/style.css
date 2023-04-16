@@ -1108,6 +1108,19 @@ nav .wrapper .burger .hide {
   .sectiongallery .fotogallery .video__text {
     font-size: 4rem;
   }
+  .sectiongallery .photoswiper {
+    top: 30%;
+    width: 80%;
+    height: 60%;
+  }
+  .sectiongallery .swiper-pagination {
+    bottom: 15%;
+  }
+  .sectiongallery .videoswiper {
+    top: 30%;
+    width: 80%;
+    height: 60%;
+  }
 }
 @media (min-width: 1200px) {
   nav .wrapper .logo {
@@ -1309,5 +1322,15 @@ nav .wrapper .burger .hide {
   .sectiongallery .fotogallery .video {
     width: 47%;
     height: 70%;
+  }
+  .sectiongallery .photoswiper {
+    top: 30%;
+    width: 70%;
+    height: 65%;
+  }
+  .sectiongallery .videoswiper {
+    top: 30%;
+    width: 70%;
+    height: 65%;
   }
 }/*# sourceMappingURL=style.css.map */
