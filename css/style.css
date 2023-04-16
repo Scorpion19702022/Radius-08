@@ -864,6 +864,15 @@ nav .wrapper .burger .hide {
   .sectiongallery .fotogallery .video {
     width: 100%;
   }
+  .sectiongallery .swiper-slide h3 {
+    font-size: 2rem;
+  }
+  .sectiongallery .swiper-slide .xmark {
+    font-size: 3rem;
+  }
+  .sectiongallery .swiper-pagination {
+    bottom: 17%;
+  }
 }
 @media (min-width: 768px) {
   nav .wrapper {

@@ -104,5 +104,16 @@
 				width: 100%;
 			}
 		}
+		.swiper-slide {
+			h3 {
+				font-size: 2rem;
+			}
+			.xmark {
+				font-size: 3rem;
+			}
+		}
+		.swiper-pagination {
+			bottom: 17%;
+		}
 	}
 }
