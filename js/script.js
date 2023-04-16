@@ -12,11 +12,6 @@ const body = document.querySelector('body')
 const imgCardOne = document.querySelector('.imgcardone')
 const imgCardTwo = document.querySelector('.imgcardtwo')
 
-const cardAboutOne = document.querySelector('.aboutone')
-const cardAboutTwo = document.querySelector('.abouttwo')
-const cardAboutThree = document.querySelector('.aboutthree')
-const cardAboutFour = document.querySelector('.aboutfour')
-
 // --------------------------------------
 
 const imgOfferOne = document.querySelector('.offerimgone')
@@ -50,12 +45,12 @@ const loadCards = () => {
 		imgCardTwo.classList.add('imgcardoneview')
 	}, 3200)
 
-	setTimeout(() => {
-		photoInGallery.classList.add('actionphotomain')
-	}, 800)
-	setTimeout(() => {
-		videoInGallery.classList.add('actionvideomain')
-	}, 1600)
+	// setTimeout(() => {
+	// 	photoInGallery.classList.add('actionphotomain')
+	// }, 800)
+	// setTimeout(() => {
+	// 	videoInGallery.classList.add('actionvideomain')
+	// }, 1600)
 }
 
 // ------------------------------------------
@@ -95,37 +90,37 @@ const scrollOffer = () => {
 
 // ------------------------------------------
 
-const swiper = new Swiper('.sliders', {
-	slidesPerView: 1,
-	spaceBetween: 30,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-})
+// const swiper = new Swiper('.sliders', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 30,
+// 	loop: true,
+// 	pagination: {
+// 		el: '.swiper-pagination',
+// 		clickable: true,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	},
+// })
 
 // ------------------------------------------
 
-const actionSliders1 = () => {
-	photoInGallery.classList.remove('actionphotomain')
-	videoInGallery.classList.remove('actionvideomain')
-	viewPhotoSlider.classList.add('swiperaction')
-	xmarkInSliders.forEach(el => {
-		el.addEventListener('click', function () {
-			photoInGallery.classList.add('actionphotomain')
-			videoInGallery.classList.add('actionvideomain')
-			viewPhotoSlider.classList.remove('swiperaction')
-		})
-	})
-}
+// const actionSliders1 = () => {
+// 	photoInGallery.classList.remove('actionphotomain')
+// 	videoInGallery.classList.remove('actionvideomain')
+// 	viewPhotoSlider.classList.add('swiperaction')
+// 	xmarkInSliders.forEach(el => {
+// 		el.addEventListener('click', function () {
+// 			photoInGallery.classList.add('actionphotomain')
+// 			videoInGallery.classList.add('actionvideomain')
+// 			viewPhotoSlider.classList.remove('swiperaction')
+// 		})
+// 	})
+// }
 
 // ------------------------------------------
 
 burgerBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', scrollOffer)
-photoInGallery.addEventListener('click', actionSliders1)
+// photoInGallery.addEventListener('click', actionSliders1)
