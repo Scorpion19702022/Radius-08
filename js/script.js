@@ -17,13 +17,11 @@ const imgCardTwo = document.querySelector('.imgcardtwo')
 const imgOfferOne = document.querySelector('.offerimgone')
 const imgOfferTwo = document.querySelector('.offerimgtwo')
 
-const photoInGallery = document.querySelector('.photo')
-const videoInGallery = document.querySelector('.video')
+// const photoInGallery = document.querySelector('.photo')
+// const videoInGallery = document.querySelector('.video')
 
-const viewPhotoSlider = document.querySelector('.photoswiper')
-const xmarkInSliders = document.querySelectorAll('.xmark')
-
-console.log(xmarkInSliders)
+// const viewPhotoSlider = document.querySelector('.photoswiper')
+// const xmarkInSliders = document.querySelectorAll('.xmark')
 
 // ------------------------------------------
 
@@ -44,13 +42,6 @@ const loadCards = () => {
 	setTimeout(() => {
 		imgCardTwo.classList.add('imgcardoneview')
 	}, 3200)
-
-	// setTimeout(() => {
-	// 	photoInGallery.classList.add('actionphotomain')
-	// }, 800)
-	// setTimeout(() => {
-	// 	videoInGallery.classList.add('actionvideomain')
-	// }, 1600)
 }
 
 // ------------------------------------------
@@ -90,37 +81,5 @@ const scrollOffer = () => {
 
 // ------------------------------------------
 
-// const swiper = new Swiper('.sliders', {
-// 	slidesPerView: 1,
-// 	spaceBetween: 30,
-// 	loop: true,
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		clickable: true,
-// 	},
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// })
-
-// ------------------------------------------
-
-// const actionSliders1 = () => {
-// 	photoInGallery.classList.remove('actionphotomain')
-// 	videoInGallery.classList.remove('actionvideomain')
-// 	viewPhotoSlider.classList.add('swiperaction')
-// 	xmarkInSliders.forEach(el => {
-// 		el.addEventListener('click', function () {
-// 			photoInGallery.classList.add('actionphotomain')
-// 			videoInGallery.classList.add('actionvideomain')
-// 			viewPhotoSlider.classList.remove('swiperaction')
-// 		})
-// 	})
-// }
-
-// ------------------------------------------
-
 burgerBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', scrollOffer)
-// photoInGallery.addEventListener('click', actionSliders1)
