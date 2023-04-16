@@ -51,18 +51,6 @@ const loadCards = () => {
 	}, 3200)
 
 	setTimeout(() => {
-		cardAboutOne.classList.add('actioncardsaboutus')
-	}, 500)
-	setTimeout(() => {
-		cardAboutTwo.classList.add('actioncardsaboutus')
-	}, 1000)
-	setTimeout(() => {
-		cardAboutThree.classList.add('actioncardsaboutus')
-	}, 1500)
-	setTimeout(() => {
-		cardAboutFour.classList.add('actioncardsaboutus')
-	}, 2000)
-	setTimeout(() => {
 		photoInGallery.classList.add('actionphotomain')
 	}, 800)
 	setTimeout(() => {
