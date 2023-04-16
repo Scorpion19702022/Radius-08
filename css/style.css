@@ -1055,6 +1055,27 @@ nav .wrapper .burger .hide {
     -webkit-box-shadow: 0.3em 0.3em 0em var(--color-red);
             box-shadow: 0.3em 0.3em 0em var(--color-red);
   }
+  .sectiongallery .photoswiper {
+    top: 30%;
+    width: 80%;
+    height: 60%;
+  }
+  .sectiongallery .swiper-pagination {
+    bottom: 15%;
+  }
+  .sectiongallery .videoswiper {
+    top: 30%;
+    width: 80%;
+    height: 60%;
+  }
+  .sectiongallery .swiper-slide .xmark {
+    top: 2%;
+    right: 2%;
+  }
+  .sectiongallery .video .xmarkvideo {
+    top: 2%;
+    right: 2%;
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {

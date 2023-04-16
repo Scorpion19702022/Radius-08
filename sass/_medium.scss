@@ -115,4 +115,32 @@
 			}
 		}
 	}
+	.sectiongallery {
+		.photoswiper {
+			top: 30%;
+			width: 80%;
+			height: 60%;
+		}
+		.swiper-pagination {
+			bottom: 15%;
+		}
+		.videoswiper {
+			top: 30%;
+			width: 80%;
+			height: 60%;
+		}
+		.swiper-slide {
+			.xmark {
+				top: 2%;
+				right: 2%;
+			}
+		}
+
+		.video {
+			.xmarkvideo {
+				top: 2%;
+				right: 2%;
+			}
+		}
+	}
 }
