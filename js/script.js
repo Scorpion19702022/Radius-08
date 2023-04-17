@@ -14,14 +14,16 @@ const imgCardTwo = document.querySelector('.imgcardtwo')
 
 // --------------------------------------
 
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie__btn')
+
+console.log(cookieBox)
+console.log(cookieBtn)
+
+// --------------------------------------
+
 const imgOfferOne = document.querySelector('.offerimgone')
 const imgOfferTwo = document.querySelector('.offerimgtwo')
-
-// const photoInGallery = document.querySelector('.photo')
-// const videoInGallery = document.querySelector('.video')
-
-// const viewPhotoSlider = document.querySelector('.photoswiper')
-// const xmarkInSliders = document.querySelectorAll('.xmark')
 
 // ------------------------------------------
 
@@ -62,6 +64,21 @@ const handleNav = () => {
 
 // ------------------------------------------
 
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookies')
+	if (cookieEaten) {
+		cookieBox.classList.add('nocookie')
+	}
+}
+showCookie()
+
+const handleCookie = () => {
+	localStorage.setItem('cookies', 'true')
+	cookieBox.classList.add('nocookie')
+}
+
+// ------------------------------------------
+
 const scrollOffer = () => {
 	if (window.scrollY >= 560) {
 		imgOfferOne.classList.add('actionofferzero')
@@ -82,4 +99,5 @@ const scrollOffer = () => {
 // ------------------------------------------
 
 burgerBtn.addEventListener('click', handleNav)
+cookieBtn.addEventListener('click', handleCookie)
 window.addEventListener('scroll', scrollOffer)

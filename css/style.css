@@ -63,6 +63,9 @@ main .cookie__btn {
 main .cookie__btn:hover {
   background-color: var(--color-darkred);
 }
+main .nocookie {
+  display: none;
+}
 
 section {
   width: 100%;
