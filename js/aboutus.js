@@ -13,6 +13,13 @@ const cardAboutTwo = document.querySelector('.abouttwo')
 const cardAboutThree = document.querySelector('.aboutthree')
 const cardAboutFour = document.querySelector('.aboutfour')
 
+// --------------------------------------
+
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie__btn')
+
+// --------------------------------------
+
 body.onload = function () {
 	loadCards()
 }
@@ -46,4 +53,22 @@ const handleNav = () => {
 	})
 }
 
+// --------------------------------------
+
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookies')
+	if (cookieEaten) {
+		cookieBox.classList.add('nocookie')
+	}
+}
+showCookie()
+
+const handleCookie = () => {
+	localStorage.setItem('cookies', 'true')
+	cookieBox.classList.add('nocookie')
+}
+
+// --------------------------------------
+
 burgerBtn.addEventListener('click', handleNav)
+cookieBtn.addEventListener('click', handleCookie)

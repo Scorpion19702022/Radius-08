@@ -21,6 +21,11 @@ const xmarkInVideo = document.querySelectorAll('.xmarkvideo')
 
 // --------------------------------------
 
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie__btn')
+
+// --------------------------------------
+
 body.onload = function () {
 	loadCards()
 }
@@ -94,6 +99,24 @@ const actionSliders2 = () => {
 	})
 }
 
+// ------------------------------------------
+
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookies')
+	if (cookieEaten) {
+		cookieBox.classList.add('nocookie')
+	}
+}
+showCookie()
+
+const handleCookie = () => {
+	localStorage.setItem('cookies', 'true')
+	cookieBox.classList.add('nocookie')
+}
+
+// ------------------------------------------
+
 burgerBtn.addEventListener('click', handleNav)
 photoInGallery.addEventListener('click', actionSliders1)
 videoInGallery.addEventListener('click', actionSliders2)
+cookieBtn.addEventListener('click', handleCookie)

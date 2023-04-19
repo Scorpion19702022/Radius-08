@@ -17,9 +17,6 @@ const imgCardTwo = document.querySelector('.imgcardtwo')
 const cookieBox = document.querySelector('.cookie')
 const cookieBtn = document.querySelector('.cookie__btn')
 
-console.log(cookieBox)
-console.log(cookieBtn)
-
 // --------------------------------------
 
 const imgOfferOne = document.querySelector('.offerimgone')
