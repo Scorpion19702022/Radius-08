@@ -91,6 +91,10 @@ p {
   color: var(--color-light);
 }
 
+.none {
+  height: 0%;
+}
+
 *,
 *::before,
 *::after {
