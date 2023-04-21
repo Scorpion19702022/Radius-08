@@ -109,11 +109,28 @@
         <section class="sectioncontact" id="contact">
             <div class="boxcontact">
                 <h2 class="boxcontact__heading">Wyślij do nas maila</h2>
-                <div class="form">
-                    <form action="mail.php" method="post" class="contactform">
+                <form action="mail.php" method="post" class="contactform">
+                    <div class="contactbox">
+                        <label for="name">Imię:</label>
+                        <input type="text" id="name" placeholder="podaj swoje imię" name="name">
+                        <p class="error">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="email">Podaj swój mail:</label>
+                        <input type="email" id="email" placeholder="podaj swój mail" name="email">
+                        <p class="error">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="msg">Imię:</label>
+                        <textarea name="msg" id="msg"></textarea>
+                        <p class="error">error</p>
+                    </div>
+                    <button class="btnsend">Wyślij</button>
 
-                    </form>
-                </div>
+                </form>
+
+                <p class="msgstatus"></p>
+
             </div>
         </section>
 
