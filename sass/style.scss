@@ -586,6 +586,100 @@ nav {
 	}
 }
 
+// ---- CONTACT ----
+
+.sectioncontact {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6em 2em 2em 2em;
+	.boxcontact {
+		width: 100%;
+		height: 85%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		&__heading {
+			font-size: 2.8rem;
+			color: var(--color-light);
+		}
+		.contactform {
+			width: 100%;
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.contactbox {
+				width: 90%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 0.8rem;
+				label {
+					width: 100%;
+					display: flex;
+					align-self: flex-start;
+					color: var(--color-light);
+					margin-bottom: 0.4em;
+					font-size: 1.8rem;
+				}
+				input {
+					width: 100%;
+					padding: 0.6em;
+					margin-bottom: 0.8em;
+					font-size: 1.8rem;
+					color: var(--color-light);
+					background-color: var(--color-darklightopacity);
+					border: 0.02em solid var(--color-red);
+				}
+				textarea {
+					min-width: 100%;
+					max-width: 100%;
+					min-height: 150px;
+					max-height: 150px;
+					padding: 0.6em;
+					margin-bottom: 0.8em;
+					font-size: 1.8rem;
+					color: var(--color-light);
+					border: 0.02em solid var(--color-red);
+					background-color: var(--color-darklightopacity);
+				}
+				p {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 1em;
+					font-size: 2rem;
+					color: var(--color-red);
+					visibility: hidden;
+				}
+				.actionerror {
+					visibility: visible;
+				}
+			}
+			.btnsend {
+				width: 90%;
+				padding: 0.4em 0;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				color: var(--color-light);
+				background-color: var(--color-red);
+				border: 0.04em solid var(--color-darkred);
+				border-radius: 0.3em;
+				cursor: pointer;
+				transition: background-color 0.3s ease-in-out;
+				&:hover {
+					background-color: var(--color-darkred);
+				}
+			}
+		}
+	}
+}
+
 @import './small';
 @import './medium';
 @import './large';
