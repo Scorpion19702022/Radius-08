@@ -996,8 +996,18 @@ nav .wrapper .burger .hide {
 .sectioncontact .boxcontact .contactform .contactbox .actionerror {
   visibility: visible;
 }
-.sectioncontact .boxcontact .contactform .btnsend {
+.sectioncontact .boxcontact .contactform .btncontact {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sectioncontact .boxcontact .contactform .btncontact .btnsend,
+.sectioncontact .boxcontact .contactform .btncontact .btnclear {
+  width: 45%;
   padding: 0.4em 0;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -1009,7 +1019,8 @@ nav .wrapper .burger .hide {
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-.sectioncontact .boxcontact .contactform .btnsend:hover {
+.sectioncontact .boxcontact .contactform .btncontact .btnsend:hover,
+.sectioncontact .boxcontact .contactform .btncontact .btnclear:hover {
   background-color: var(--color-darkred);
 }
 

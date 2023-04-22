@@ -661,19 +661,25 @@ nav {
 					visibility: visible;
 				}
 			}
-			.btnsend {
+			.btncontact {
 				width: 90%;
-				padding: 0.4em 0;
-				font-size: 1.4rem;
-				text-transform: uppercase;
-				color: var(--color-light);
-				background-color: var(--color-red);
-				border: 0.04em solid var(--color-darkred);
-				border-radius: 0.3em;
-				cursor: pointer;
-				transition: background-color 0.3s ease-in-out;
-				&:hover {
-					background-color: var(--color-darkred);
+				display: flex;
+				justify-content: space-between;
+				.btnsend,
+				.btnclear {
+					width: 45%;
+					padding: 0.4em 0;
+					font-size: 1.4rem;
+					text-transform: uppercase;
+					color: var(--color-light);
+					background-color: var(--color-red);
+					border: 0.04em solid var(--color-darkred);
+					border-radius: 0.3em;
+					cursor: pointer;
+					transition: background-color 0.3s ease-in-out;
+					&:hover {
+						background-color: var(--color-darkred);
+					}
 				}
 			}
 		}
