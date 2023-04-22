@@ -891,9 +891,10 @@ nav .wrapper .burger .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6em 2em 2em 2em;
+  padding: 4em 2em 2em 2em;
 }
 .sectioncontact .boxcontact {
+  position: relative;
   width: 100%;
   height: 85%;
   display: -webkit-box;
@@ -915,6 +916,7 @@ nav .wrapper .burger .hide {
   color: var(--color-light);
 }
 .sectioncontact .boxcontact .contactform {
+  position: relative;
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -1022,6 +1024,34 @@ nav .wrapper .burger .hide {
 .sectioncontact .boxcontact .contactform .btncontact .btnsend:hover,
 .sectioncontact .boxcontact .contactform .btncontact .btnclear:hover {
   background-color: var(--color-darkred);
+}
+.sectioncontact .boxcontact .msgstatus {
+  position: absolute;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  width: 50%;
+  height: 60px;
+  top: 10%;
+  color: var(--color-light);
+  font-size: 2rem;
+  background-color: var(--color-darklightopacity);
+  border: 0.02em solid var(--color-red);
+}
+.sectioncontact .boxcontact .sendsuccess {
+  visibility: visible;
+}
+.sectioncontact .boxcontact .senderror {
+  visibility: visible;
+  background-color: var(--color-red);
 }
 
 @media (max-width: 576px) {

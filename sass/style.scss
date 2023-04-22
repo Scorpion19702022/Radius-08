@@ -593,8 +593,9 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 6em 2em 2em 2em;
+	padding: 4em 2em 2em 2em;
 	.boxcontact {
+		position: relative;
 		width: 100%;
 		height: 85%;
 		display: flex;
@@ -606,6 +607,7 @@ nav {
 			color: var(--color-light);
 		}
 		.contactform {
+			position: relative;
 			width: 100%;
 			height: 70%;
 			display: flex;
@@ -682,6 +684,28 @@ nav {
 					}
 				}
 			}
+		}
+		.msgstatus {
+			position: absolute;
+			visibility: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+			width: 50%;
+			height: 60px;
+			top: 10%;
+			color: var(--color-light);
+			font-size: 2rem;
+			background-color: var(--color-darklightopacity);
+			border: 0.02em solid var(--color-red);
+		}
+		.sendsuccess {
+			visibility: visible;
+		}
+		.senderror {
+			visibility: visible;
+			background-color: var(--color-red);
 		}
 	}
 }
