@@ -17,5 +17,5 @@ if ($mail_status) {
     header("Location: /index.html?mail_status=sent");
     # code...
 } else{
-    header("Location: /index.html#contact?mail_status=error");
+    header("Location: /index.html?mail_status=sent");
 }
