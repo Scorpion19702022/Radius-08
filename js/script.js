@@ -23,11 +23,6 @@ const imgOfferOne = document.querySelector('.offerimgone')
 const imgOfferTwo = document.querySelector('.offerimgtwo')
 
 // ------------------------------------------
-const msgStatus = document.querySelector('.msgstatus')
-
-console.log(document.location.search)
-
-// ------------------------------------------
 
 body.onload = function () {
 	loadCards()
@@ -96,17 +91,6 @@ const scrollOffer = () => {
 		imgOfferOne.classList.remove('actionofferone')
 		imgOfferTwo.classList.remove('actionofferone')
 	}
-}
-
-// ------------------------------------------
-
-if (document.location.search === '?mail_status=sent') {
-	msgStatus.classList.add('sendsuccess')
-	msgStatus.textContent = 'Wiadomość wysłana poprawnie'
-}
-if (document.location.search === '?mail_status=error') {
-	msgStatus.classList.add('senderror')
-	msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 }
 
 // ------------------------------------------
