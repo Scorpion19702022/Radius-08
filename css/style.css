@@ -1008,7 +1008,7 @@ nav .wrapper .burger .hide {
           justify-content: space-between;
 }
 .sectioncontact .boxcontact .contactform .btncontact .btnsend,
-.sectioncontact .boxcontact .contactform .btncontact .btnclear {
+.sectioncontact .boxcontact .contactform .btncontact .btnclean {
   width: 45%;
   padding: 0.4em 0;
   font-size: 1.4rem;
@@ -1022,7 +1022,7 @@ nav .wrapper .burger .hide {
   transition: background-color 0.3s ease-in-out;
 }
 .sectioncontact .boxcontact .contactform .btncontact .btnsend:hover,
-.sectioncontact .boxcontact .contactform .btncontact .btnclear:hover {
+.sectioncontact .boxcontact .contactform .btncontact .btnclean:hover {
   background-color: var(--color-darkred);
 }
 .sectioncontact .boxcontact .msgstatus {
