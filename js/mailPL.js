@@ -38,23 +38,64 @@ const send = e => {
 		setTimeout(() => {
 			msgStatus.classList.remove('sendsuccess')
 		}, 3000)
-	} else if (inputName.value === '') {
+	} else if (inputName.value === '' && inputMail.value === '' && textarea.value === '') {
 		errorName.classList.add('actionerror')
 		errorName.textContent = 'Wypełnij pole'
-		msgStatus.classList.add('senderror')
-		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
-		setTimeout(() => {
-			msgStatus.classList.remove('senderror')
-		}, 3000)
-	} else if (inputMail.value === '') {
 		errorMail.classList.add('actionerror')
 		errorMail.textContent = 'Wypełnij pole'
+		errorText.classList.add('actionerror')
+		errorText.textContent = 'Wypełnij pole'
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
 			msgStatus.classList.remove('senderror')
 		}, 3000)
-	} else if (textarea.value === '') {
+	} else if (inputName.value !== '' && inputMail.value === '' && textarea.value === '') {
+		errorName.classList.remove('actionerror')
+		errorMail.classList.add('actionerror')
+		errorMail.textContent = 'Wypełnij pole'
+		errorText.classList.add('actionerror')
+		errorText.textContent = 'Wypełnij pole'
+		msgStatus.classList.add('senderror')
+		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
+		setTimeout(() => {
+			msgStatus.classList.remove('senderror')
+		}, 3000)
+	} else if (inputName.value === '' && inputMail.value !== '' && textarea.value === '') {
+		errorName.classList.add('actionerror')
+		errorName.textContent = 'Wypełnij pole'
+		errorMail.classList.remove('actionerror')
+		errorText.classList.add('actionerror')
+		errorText.textContent = 'Wypełnij pole'
+		msgStatus.classList.add('senderror')
+		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
+		setTimeout(() => {
+			msgStatus.classList.remove('senderror')
+		}, 3000)
+	} else if (inputName.value === '' && inputMail.value === '' && textarea.value !== '') {
+		errorName.classList.add('actionerror')
+		errorName.textContent = 'Wypełnij pole'
+		errorMail.classList.add('actionerror')
+		errorMail.textContent = 'Wypełnij pole'
+		errorText.classList.remove('actionerror')
+		msgStatus.classList.add('senderror')
+		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
+		setTimeout(() => {
+			msgStatus.classList.remove('senderror')
+		}, 3000)
+	} else if (inputName.value !== '' && inputMail.value === '' && textarea.value !== '') {
+		errorName.classList.remove('actionerror')
+		errorMail.classList.add('actionerror')
+		errorMail.textContent = 'Wypełnij pole'
+		errorText.classList.remove('actionerror')
+		msgStatus.classList.add('senderror')
+		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
+		setTimeout(() => {
+			msgStatus.classList.remove('senderror')
+		}, 3000)
+	} else if (inputName.value !== '' && inputMail.value !== '' && textarea.value === '') {
+		errorName.classList.remove('actionerror')
+		errorMail.classList.remove('actionerror')
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
 		msgStatus.classList.add('senderror')
