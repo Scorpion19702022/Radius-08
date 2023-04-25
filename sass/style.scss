@@ -139,8 +139,8 @@ nav {
 .sectionhome {
 	display: flex;
 	align-items: center;
-	height: 100vh;
-	padding: 6em 2em 2em 2em;
+	height: 100%;
+	padding: 4em 2em 2em 2em;
 	.cards {
 		display: flex;
 		flex-direction: column;
@@ -153,8 +153,9 @@ nav {
 		// overflow: hidden;
 		&__cardone {
 			width: 90%;
-			height: 47%;
+			height: 65%;
 			padding: 2em;
+			margin-bottom: 1.2em;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -188,7 +189,7 @@ nav {
 		}
 		&__cardtwo {
 			width: 90%;
-			height: 47%;
+			height: 65%;
 			padding: 2em;
 			display: flex;
 			flex-direction: column;
@@ -218,6 +219,7 @@ nav {
 			&--btn {
 				width: 100%;
 				padding: 0.4em 0;
+				margin-top: 1em;
 				background-color: var(--color-red);
 				border: 0.04em solid var(--color-darkred);
 				border-radius: 0.3em;
@@ -243,15 +245,16 @@ nav {
 // ---- ABOUT US ----
 
 .sectionaboutus {
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 6em 2em 2em 2em;
+	padding: 4em 2em 2em 2em;
 	.cardabout {
 		position: relative;
-		width: 45%;
-		height: 40%;
+		width: 70%;
+		height: 300px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -312,8 +315,8 @@ nav {
 // ---- OFFER ----
 
 .sectionoffer {
-	height: 100vh;
-	padding: 2em 2em 2em 2em;
+	height: 100%;
+	padding: 6em 2em 2em 2em;
 	.offer {
 		width: 100%;
 		height: 80%;
@@ -369,7 +372,7 @@ nav {
 
 .sectiongallery {
 	position: relative;
-	height: 100vh;
+	height: 100%;
 	padding: 6em 2em 2em 2em;
 	display: flex;
 	flex-direction: column;
@@ -389,6 +392,7 @@ nav {
 		width: 100%;
 		height: 70%;
 		display: flex;
+		margin: 1em;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
@@ -399,6 +403,7 @@ nav {
 			align-items: center;
 			width: 70%;
 			height: 43%;
+			margin-bottom: 1em;
 			transform: translateX(-150%);
 			cursor: pointer;
 			transition: transform 0.3s ease-in-out;
@@ -589,11 +594,11 @@ nav {
 // ---- CONTACT ----
 
 .sectioncontact {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 4em 2em 2em 2em;
+	padding: 8em 2em 2em 2em;
 	.boxcontact {
 		position: relative;
 		width: 100%;
