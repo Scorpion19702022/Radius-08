@@ -67,6 +67,26 @@ main .nocookie {
   display: none;
 }
 
+button {
+  width: 100%;
+  padding: 0.4em 0;
+  margin-top: 1em;
+  background-color: var(--color-red);
+  border: 0.04em solid var(--color-darkred);
+  border-radius: 0.3em;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: var(--color-darkred);
+}
+button a {
+  text-decoration: none;
+  color: var(--color-light);
+  text-transform: uppercase;
+}
+
 section {
   width: 100%;
   height: 100vh;
@@ -396,25 +416,6 @@ nav .wrapper .burger .hide {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
-.sectionhome .cards__cardtwo--btn {
-  width: 100%;
-  padding: 0.4em 0;
-  margin-top: 1em;
-  background-color: var(--color-red);
-  border: 0.04em solid var(--color-darkred);
-  border-radius: 0.3em;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-.sectionhome .cards__cardtwo--btn:hover {
-  background-color: var(--color-darkred);
-}
-.sectionhome .cards__cardtwo--btn a {
-  text-decoration: none;
-  color: var(--color-light);
-  text-transform: uppercase;
-}
 .sectionhome .cards .actioncards {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -496,21 +497,6 @@ nav .wrapper .burger .hide {
   position: absolute;
   width: 70%;
   bottom: 10%;
-  padding: 0.4em 0;
-  background-color: var(--color-red);
-  border: 0.04em solid var(--color-darkred);
-  border-radius: 0.3em;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-.sectionaboutus .cardabout .btnanime:hover {
-  background-color: var(--color-darkred);
-}
-.sectionaboutus .cardabout .btnanime a {
-  text-decoration: none;
-  color: var(--color-light);
-  text-transform: uppercase;
 }
 
 .sectionoffer {
@@ -886,6 +872,7 @@ nav .wrapper .burger .hide {
 }
 
 .sectioncontact {
+  position: relative;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,7 +886,6 @@ nav .wrapper .burger .hide {
   padding: 8em 2em 2em 2em;
 }
 .sectioncontact .boxcontact {
-  position: relative;
   width: 100%;
   height: 85%;
   display: -webkit-box;
@@ -921,7 +907,6 @@ nav .wrapper .burger .hide {
   color: var(--color-light);
 }
 .sectioncontact .boxcontact .contactform {
-  position: relative;
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -984,6 +969,10 @@ nav .wrapper .burger .hide {
   border: 0.02em solid var(--color-red);
   background-color: var(--color-darklightopacity);
 }
+.sectioncontact .boxcontact .contactform .contactbox .backerror {
+  background-color: var(--color-red);
+  border: 0.02em solid var(--color-light);
+}
 .sectioncontact .boxcontact .contactform .contactbox p {
   width: 100%;
   display: -webkit-box;
@@ -996,7 +985,8 @@ nav .wrapper .burger .hide {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 1em;
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.8rem;
   color: var(--color-red);
   visibility: hidden;
 }
@@ -1019,16 +1009,6 @@ nav .wrapper .burger .hide {
   font-size: 1.4rem;
   text-transform: uppercase;
   color: var(--color-light);
-  background-color: var(--color-red);
-  border: 0.04em solid var(--color-darkred);
-  border-radius: 0.3em;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-.sectioncontact .boxcontact .contactform .btncontact .btnsend:hover,
-.sectioncontact .boxcontact .contactform .btncontact .btnclean:hover {
-  background-color: var(--color-darkred);
 }
 .sectioncontact .boxcontact .msgstatus {
   position: absolute;
@@ -1043,11 +1023,11 @@ nav .wrapper .burger .hide {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
-  width: 90%;
+  width: 82%;
   height: 60px;
-  top: 10%;
+  top: 7%;
   color: var(--color-light);
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: var(--color-darklightopacity);
   border: 0.02em solid var(--color-red);
 }

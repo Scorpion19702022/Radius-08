@@ -35,6 +35,9 @@ const send = e => {
 		errorName.classList.remove('actionerror')
 		errorMail.classList.remove('actionerror')
 		errorText.classList.remove('actionerror')
+		inputName.classList.remove('backerror')
+		inputMail.classList.remove('backerror')
+		textarea.classList.remove('backerror')
 		setTimeout(() => {
 			msgStatus.classList.remove('sendsuccess')
 		}, 3000)
@@ -45,9 +48,18 @@ const send = e => {
 		errorMail.textContent = 'Wypełnij pole'
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
+		inputName.classList.add('backerror')
+		inputMail.classList.add('backerror')
+		textarea.classList.add('backerror')
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
+			errorName.classList.remove('actionerror')
+			errorMail.classList.remove('actionerror')
+			errorText.classList.remove('actionerror')
+			inputName.classList.remove('backerror')
+			inputMail.classList.remove('backerror')
+			textarea.classList.remove('backerror')
 			msgStatus.classList.remove('senderror')
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value === '' && textarea.value === '') {
@@ -56,9 +68,15 @@ const send = e => {
 		errorMail.textContent = 'Wypełnij pole'
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
+		inputMail.classList.add('backerror')
+		textarea.classList.add('backerror')
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
+			errorMail.classList.remove('actionerror')
+			errorText.classList.remove('actionerror')
+			inputMail.classList.remove('backerror')
+			textarea.classList.remove('backerror')
 			msgStatus.classList.remove('senderror')
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value !== '' && textarea.value === '') {
@@ -67,9 +85,15 @@ const send = e => {
 		errorMail.classList.remove('actionerror')
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
+		inputName.classList.add('backerror')
+		textarea.classList.add('backerror')
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
+			errorName.classList.remove('actionerror')
+			errorText.classList.remove('actionerror')
+			inputName.classList.remove('backerror')
+			textarea.classList.remove('backerror')
 			msgStatus.classList.remove('senderror')
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value === '' && textarea.value !== '') {
@@ -78,9 +102,15 @@ const send = e => {
 		errorMail.classList.add('actionerror')
 		errorMail.textContent = 'Wypełnij pole'
 		errorText.classList.remove('actionerror')
+		inputName.classList.add('backerror')
+		inputMail.classList.add('backerror')
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
+			errorName.classList.remove('actionerror')
+			errorMail.classList.remove('actionerror')
+			inputName.classList.remove('backerror')
+			inputMail.classList.remove('backerror')
 			msgStatus.classList.remove('senderror')
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value === '' && textarea.value !== '') {
@@ -88,9 +118,12 @@ const send = e => {
 		errorMail.classList.add('actionerror')
 		errorMail.textContent = 'Wypełnij pole'
 		errorText.classList.remove('actionerror')
+		inputMail.classList.add('backerror')
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
+			errorMail.classList.remove('actionerror')
+			inputMail.classList.remove('backerror')
 			msgStatus.classList.remove('senderror')
 		}, 3000)
 	} else if (inputName.value !== '' && inputMail.value !== '' && textarea.value === '') {
@@ -98,9 +131,12 @@ const send = e => {
 		errorMail.classList.remove('actionerror')
 		errorText.classList.add('actionerror')
 		errorText.textContent = 'Wypełnij pole'
+		textarea.classList.add('backerror')
 		msgStatus.classList.add('senderror')
 		msgStatus.textContent = 'Nie udało się wysłać wiadomości'
 		setTimeout(() => {
+			errorText.classList.remove('actionerror')
+			textarea.classList.remove('backerror')
 			msgStatus.classList.remove('senderror')
 		}, 3000)
 	}
