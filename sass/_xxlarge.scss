@@ -115,4 +115,27 @@
 			height: 65%;
 		}
 	}
+	.sectioncontact {
+		padding: 4em 2em 4em 2em;
+		.boxcontact {
+			&__heading {
+				font-size: 4.6rem;
+			}
+			.contactform {
+				.contactbox {
+					width: 70%;
+					p {
+						margin-bottom: 0.2em;
+					}
+				}
+				.btncontact {
+					width: 70%;
+				}
+			}
+			.msgstatus {
+				top: 22%;
+				width: 67.5%;
+			}
+		}
+	}
 }

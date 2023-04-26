@@ -1037,6 +1037,7 @@ nav .wrapper .burger .hide {
 .sectioncontact .boxcontact .senderror {
   visibility: visible;
   background-color: var(--color-red);
+  border: 0.02em solid var(--color-light);
 }
 
 @media (max-width: 576px) {
@@ -1360,6 +1361,14 @@ nav .wrapper .burger .hide {
     top: 2%;
     right: 2%;
   }
+  .sectioncontact {
+    padding: 4em 2em 2em 2em;
+    height: 100vh;
+  }
+  .sectioncontact .boxcontact .msgstatus {
+    width: 83%;
+    top: 20%;
+  }
 }
 @media (min-width: 992px) {
   nav .wrapper .logo a img {
@@ -1440,6 +1449,9 @@ nav .wrapper .burger .hide {
     top: 30%;
     width: 80%;
     height: 60%;
+  }
+  .sectioncontact .boxcontact .msgstatus {
+    width: 84%;
   }
 }
 @media (min-width: 1200px) {
@@ -1555,6 +1567,9 @@ nav .wrapper .burger .hide {
   .sectiongallery .text__info {
     font-size: 3rem;
   }
+  .sectioncontact .boxcontact .msgstatus {
+    width: 85%;
+  }
 }
 @media (min-width: 1400px) {
   nav .wrapper .logo {
@@ -1658,5 +1673,24 @@ nav .wrapper .burger .hide {
     top: 30%;
     width: 70%;
     height: 65%;
+  }
+  .sectioncontact {
+    padding: 4em 2em 4em 2em;
+  }
+  .sectioncontact .boxcontact__heading {
+    font-size: 4.6rem;
+  }
+  .sectioncontact .boxcontact .contactform .contactbox {
+    width: 70%;
+  }
+  .sectioncontact .boxcontact .contactform .contactbox p {
+    margin-bottom: 0.2em;
+  }
+  .sectioncontact .boxcontact .contactform .btncontact {
+    width: 70%;
+  }
+  .sectioncontact .boxcontact .msgstatus {
+    top: 22%;
+    width: 67.5%;
   }
 }/*# sourceMappingURL=style.css.map */

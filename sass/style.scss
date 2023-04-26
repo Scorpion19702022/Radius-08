@@ -675,6 +675,7 @@ nav {
 		.senderror {
 			visibility: visible;
 			background-color: var(--color-red);
+			border: 0.02em solid var(--color-light);
 		}
 	}
 }
