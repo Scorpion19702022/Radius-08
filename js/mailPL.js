@@ -40,6 +40,9 @@ const send = e => {
 		textarea.classList.remove('backerror')
 		setTimeout(() => {
 			msgStatus.classList.remove('sendsuccess')
+			inputName.value = ''
+			inputMail.value = ''
+			textarea.value = ''
 		}, 3000)
 	} else if (inputName.value === '' && inputMail.value === '' && textarea.value === '') {
 		errorName.classList.add('actionerror')
