@@ -1109,16 +1109,23 @@ nav .wrapper .burger .hide {
     font-size: 1.8rem;
   }
   .sectionoffer {
+    height: 100vh;
     padding: 2em 2em 2em 2em;
+  }
+  .sectionoffer .offer {
+    width: 90%;
   }
   .sectionoffer .offer__text--heading {
     font-size: 2.4rem;
-    margin-bottom: 1em;
+    margin-bottom: 1.4em;
+  }
+  .sectionoffer .offer__text--list ul {
+    margin-bottom: 3em;
   }
   .sectionoffer .offer__text--list ul li {
     margin-bottom: 1.6em;
     padding-bottom: 0.6em;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .sectionoffer .offer__img .actionofferzero {
     -webkit-transform: scale(1);
@@ -1153,6 +1160,35 @@ nav .wrapper .burger .hide {
   }
   .sectiongallery .pagination {
     bottom: 30%;
+  }
+  .sectioncontact {
+    height: 100vh;
+    padding: 4em 2em 2em 2em;
+  }
+  .sectioncontact .boxcontact__heading {
+    font-size: 2.2rem;
+  }
+  .sectioncontact .boxcontact .contactform .contactbox {
+    margin-bottom: 0.4em;
+  }
+  .sectioncontact .boxcontact .contactform .contactbox input {
+    padding: 0.4em;
+    font-style: 1rem;
+    margin-bottom: 0.4em;
+  }
+  .sectioncontact .boxcontact .contactform .contactbox textarea {
+    min-height: 120px;
+    max-height: 120px;
+  }
+  .sectioncontact .boxcontact .contactform .contactbox p {
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+  }
+  .sectioncontact .boxcontact .msgstatus {
+    width: 76%;
+    height: 45px;
+    top: 22%;
+    font-size: 2rem;
   }
 }
 @media (min-width: 768px) {
