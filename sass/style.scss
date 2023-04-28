@@ -13,6 +13,7 @@
 	--color-lightmore: #b7b7b7;
 	--color-red: #d00606;
 	--color-darkred: #990000;
+	--color-rederrors: rgba(51, 0, 0, 0.6);
 	--color-darklight: #1d1d1d;
 	--color-darklightopacity: rgba(29, 29, 29, 0.8);
 	--color-darkone: #111111;
@@ -622,7 +623,7 @@ nav {
 					background-color: var(--color-darklightopacity);
 				}
 				.backerror {
-					background-color: var(--color-red);
+					background-color: var(--color-rederrors);
 					border: 0.02em solid var(--color-light);
 				}
 				p {
