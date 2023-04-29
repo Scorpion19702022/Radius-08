@@ -37,7 +37,7 @@
                 <a href="aboutusENG.html" class="navbar__link" onclick="void(0)">About Us</a>
                 <a href="#offer" class="navbar__link" onclick="void(0)">Offer</a>
                 <a href="galleryENG.html" class="navbar__link" onclick="void(0)">Gallery</a>
-                <a href="#" class="navbar__link" onclick="void(0)">Contact</a>
+                <a href="#contact" class="navbar__link" onclick="void(0)">Contact</a>
             </div>
             <div class="burger">
                 <i class="fa-solid fa-bars"></i>
@@ -106,10 +106,43 @@
             </div>
         </section>
 
+        <section class="sectioncontact" id="contact">
+            <div class="boxcontact">
+                <h2 class="boxcontact__heading">Send us an email</h2>
+                <!-- <form action="./php/mailEN.php" method="post" class="contactform"> -->
+                <form class="contactform">
+                    <div class="contactbox">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" placeholder="pass your name" name="name">
+                        <p class="errorname">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="email">Your e-mail:</label>
+                        <input type="email" id="email" placeholder="pass your e-mail" name="email">
+                        <p class="erroremail">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="msg">Your message:</label>
+                        <textarea name="msg" id="msg" placeholder="enter text"></textarea>
+                        <p class="errortext">error</p>
+                    </div>
+                    <div class="btncontact">
+                        <button class="btnsend">Send</button>
+                        <button class="btnclean">Clear</button>
+                    </div>
+
+                </form>
+
+                <p class="msgstatus"></p>
+
+            </div>
+        </section>
+
     </main>
 
 
     <script src="./js/script.js"></script>
+    <script src="./js/mailEN.js"></script>
 </body>
 
 </html>
