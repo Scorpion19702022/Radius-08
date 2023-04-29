@@ -2,11 +2,11 @@
 
 $name = $_POST["name"];
 $from = $_POST["email"];
-$subject = "Wiadomość ze strony internetowej Radius 08";
+$subject = "A message from the Radius 08 website";
 $to = "xxxx@xxxxx.pl";
 $message = $_POST["msg"];
 
-$txt = "Imię: " . $name . "\r\n" . "Email " . $from . "\r\n" . "\r\n" . "Treść: " . $message;
+$txt = "Name: " . $name . "\r\n" . "Email " . $from . "\r\n" . "\r\n" . "Content: " . $message;
 
 $headers = "From: " . $from . "\r\n";
 $headers .= "Reply-to: " . $from . "\r\n";
