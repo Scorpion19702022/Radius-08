@@ -680,6 +680,45 @@ nav {
 		}
 	}
 }
+footer {
+	width: 100%;
+	height: 80px;
+	padding: 2em 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.footercompany {
+		display: flex;
+		align-items: center;
+		width: 47%;
+		img {
+			width: 25%;
+			object-fit: cover;
+		}
+		&__text {
+			color: var(--color-lightmore);
+			font-size: 2rem;
+		}
+	}
+	.footerproducer {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&__text {
+			font-size: 1.8rem;
+		}
+		&__info {
+			font-size: 1.4rem;
+			color: var(--color-lightmore);
+		}
+		a {
+			text-decoration: none;
+			color: var(--color-light);
+		}
+	}
+}
 
 @import './small';
 @import './medium';
