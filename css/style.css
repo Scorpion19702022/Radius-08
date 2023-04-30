@@ -1815,4 +1815,15 @@ footer .footerproducer .contact a:hover {
     top: 22%;
     width: 67.75%;
   }
+  footer .footercompany {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footercompany img {
+    width: 11%;
+  }
+  footer .footerproducer .contact {
+    width: 28%;
+  }
 }/*# sourceMappingURL=style.css.map */
