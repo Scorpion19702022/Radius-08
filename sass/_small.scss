@@ -79,16 +79,16 @@
 			width: 90%;
 			&__text {
 				&--heading {
-					font-size: 2.4rem;
+					font-size: 2rem;
 					margin-bottom: 1.4em;
 				}
 				&--list {
 					ul {
-						margin-bottom: 3em;
+						margin-bottom: 1.2em;
 						li {
-							margin-bottom: 1.6em;
+							margin-bottom: 1.2em;
 							padding-bottom: 0.6em;
-							font-size: 1.4rem;
+							font-size: 1.2rem;
 						}
 					}
 				}
@@ -143,32 +143,57 @@
 		padding: 4em 2em 2em 2em;
 		.boxcontact {
 			&__heading {
-				font-size: 2.2rem;
+				font-size: 1.8rem;
 			}
 			.contactform {
 				// height: 40%;
 				.contactbox {
-					margin-bottom: 0.4em;
+					margin-bottom: 0.2em;
+					label {
+						font-size: 1.4rem;
+					}
 					input {
 						padding: 0.4em;
 						font-style: 1rem;
-						margin-bottom: 0.4em;
+						margin-bottom: 0.2em;
+						font-size: 1.4rem;
 					}
 					textarea {
 						min-height: 120px;
-						max-height: 120px;
+						max-height: 100px;
+						font-size: 1.4rem;
+						margin-bottom: 0.2em;
 					}
 					p {
-						font-size: 2rem;
-						margin-bottom: 0.6em;
+						font-size: 1.4rem;
+						margin-bottom: 0.2em;
 					}
 				}
 			}
 			.msgstatus {
-				width: 76%;
-				height: 45px;
+				width: 75%;
+				height: 40px;
 				top: 22%;
-				font-size: 2rem;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	footer {
+		.footercompany {
+			w img {
+				width: 40%;
+			}
+			&__text {
+				font-size: 1.6rem;
+			}
+		}
+		.footerproducer {
+			&__text {
+				font-size: 1.2rem;
+			}
+			&__info {
+				font-size: 1.2rem;
 			}
 		}
 	}
