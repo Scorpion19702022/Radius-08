@@ -180,12 +180,14 @@
 	}
 
 	footer {
+		padding: 2em 0.6em;
 		.footercompany {
-			w img {
-				width: 40%;
+			padding-left: 0;
+			img {
+				width: 30%;
 			}
 			&__text {
-				font-size: 1.6rem;
+				font-size: 1.2rem;
 			}
 		}
 		.footerproducer {
@@ -194,6 +196,12 @@
 			}
 			&__info {
 				font-size: 1.2rem;
+			}
+			.contact {
+				width: 100%;
+				a {
+					font-size: 1rem;
+				}
 			}
 		}
 	}
