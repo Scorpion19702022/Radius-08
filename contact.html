@@ -33,19 +33,17 @@
                 <a href="inENG.html" class="language__en red">EN</a>
             </div>
             <div class="navbar">
-                <a href="#home" class="navbar__link" onclick="void(0)">Home</a>
+                <a href="index.html#home" class="navbar__link" onclick="void(0)">Home</a>
                 <a href="aboutus.html" class="navbar__link" onclick="void(0)">O nas</a>
-                <a href="#offer" class="navbar__link" onclick="void(0)">Oferta</a>
+                <a href="index.html#offer" class="navbar__link" onclick="void(0)">Oferta</a>
                 <a href="gallery.html" class="navbar__link" onclick="void(0)">Galeria</a>
-                <a href="contact.html" class="navbar__link" onclick="void(0)">Kontakt</a>
+                <a href="#" class="navbar__link" onclick="void(0)">Kontakt</a>
             </div>
             <div class="burger">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-xmark hide"></i>
             </div>
         </div>
-
-
     </nav>
 
     <main>
@@ -58,51 +56,35 @@
             <p class="cookie__text">Strona korzysta z ciasteczek</p>
             <button class="cookie__btn">akceptuj</button>
         </div>
+        <section class="sectioncontact" id="contact">
+            <div class="boxcontact">
+                <h2 class="boxcontact__heading">Wyślij do nas maila</h2>
+                <!-- <form action="./php/mailPL.php" method="post" class="contactform"> -->
+                <form class="contactform">
+                    <div class="contactbox">
+                        <label for="name">Twoje imię:</label>
+                        <input type="text" id="name" placeholder="podaj swoje imię" name="name">
+                        <p class="errorname">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="email">Twój e-mail:</label>
+                        <input type="email" id="email" placeholder="podaj swój e-mail" name="email">
+                        <p class="erroremail">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="msg">Twoja wiadomość:</label>
+                        <textarea name="msg" id="msg" placeholder="wpisz tekst"></textarea>
+                        <p class="errortext">error</p>
+                    </div>
+                    <div class="btncontact">
+                        <button class="btnsend">Wyślij</button>
+                        <button class="btnclean">Wyczyść</button>
+                    </div>
 
-        <section class="sectionhome" id="home">
-            <div class="cards">
-                <div class="cards__cardone">
-                    <div class="cards__cardone--img">
-                        <img src="./img/radius logo.png" alt="logo" class="imgcardone">
-                    </div>
-                    <h1 class="cards__cardone--heading">Radius 08 s.c.</h1>
-                    <p class="cards__cardone--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-                        unde.</p>
-                </div>
-                <div class="cards__cardtwo">
-                    <div class="cards__cardtwo--img">
-                        <img src="./img/radius logo.png" alt="logo" class="imgcardtwo">
-                    </div>
-                    <p class="cards__cardtwo--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel nihil
-                        neque modi eos. Accusamus, voluptates perspiciatis.</p>
-                    <button class="cards__cardtwo--btn">
-                        <a href="aboutus.html">czytaj więcej</a>
-                    </button>
-                </div>
-            </div>
-        </section>
+                </form>
 
-        <section class="sectionoffer" id="offer">
-            <div class="offer">
-                <div class="offer__text">
-                    <h2 class="offer__text--heading">Nasza oferta obejmuje:</h2>
-                    <div class="offer__text--list">
-                        <ul>
-                            <li>tworzenie nowych elementów od zera</li>
-                            <li>tworzenie elementów bazujących na materiałach klienta</li>
-                            <li>przygotowanie powierzonego projektu do druku</li>
-                            <li>pełną obsługę druku przygotowanych materiałów</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="offer__img">
-                    <img src="./img/offer/offer1.jpg" alt="zdjęcie oferty druku" class="offerimgone">
-                    <img src="./img/offer/offer2.jpg" alt="zdjęcie oferty druku" class="offerimgtwo">
-                </div>
+                <p class="msgstatus"></p>
+
             </div>
         </section>
 
@@ -124,12 +106,9 @@
                 </div>
             </div>
         </footer>
-
     </main>
 
-
-    <script src="./js/script.js"></script>
-    <!-- <script src="./js/mailPL.js"></script> -->
+    <script src="./js/mailPL.js"></script>
     <script src="./js/footerPL.js"></script>
 </body>
 

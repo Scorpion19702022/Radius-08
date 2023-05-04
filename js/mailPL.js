@@ -1,3 +1,16 @@
+const burgerBtn = document.querySelector('.burger')
+const btnBars = document.querySelector('.fa-bars')
+const btnCross = document.querySelector('.fa-xmark')
+const nav = document.querySelector('.navbar')
+const links = document.querySelectorAll('.navbar__link')
+
+// --------------------------------------
+
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie__btn')
+
+// --------------------------------------
+
 const msgStatus = document.querySelector('.msgstatus')
 
 const inputName = document.querySelector('#name')
@@ -30,6 +43,39 @@ const re =
 // 		msgStatus.classList.remove('senderror')
 // 	}, 3000)
 // }
+
+// ------------------------------------------
+
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookies')
+	if (cookieEaten) {
+		cookieBox.classList.add('nocookie')
+	}
+}
+showCookie()
+
+const handleCookie = () => {
+	localStorage.setItem('cookies', 'true')
+	cookieBox.classList.add('nocookie')
+}
+
+// ------------------------------------------
+
+const handleNav = () => {
+	nav.classList.toggle('actionnav')
+	btnBars.classList.toggle('hide')
+	btnCross.classList.toggle('hide')
+
+	links.forEach(items => {
+		items.addEventListener('click', () => {
+			nav.classList.remove('actionnav')
+			btnBars.classList.remove('hide')
+			btnCross.classList.add('hide')
+		})
+	})
+}
+
+// ------------------------------------------
 
 const send = e => {
 	if (inputName.value !== '' && re.test(inputMail.value) && textarea.value !== '') {
@@ -239,5 +285,7 @@ const clean = e => {
 	e.preventDefault()
 }
 
+burgerBtn.addEventListener('click', handleNav)
 btnSend.addEventListener('click', send)
 btnClear.addEventListener('click', clean)
+cookieBtn.addEventListener('click', handleCookie)
