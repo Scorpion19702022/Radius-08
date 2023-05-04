@@ -26,18 +26,18 @@
 
         <div class="wrapper">
             <div class="logo">
-                <a href="#home"><img src="./img/radius logo.png" alt="logo"></a>
+                <a href="inENG.html"><img src="./img/radius logo.png" alt="logo"></a>
             </div>
             <div class="language">
-                <a href="index.html" class="language__pl red">PL</a>
+                <a href="contact.html" class="language__pl red">PL</a>
                 <a href="#" class="language__en">EN</a>
             </div>
             <div class="navbar">
-                <a href="#home" class="navbar__link" onclick="void(0)">Home</a>
+                <a href="inENG.html#home" class="navbar__link" onclick="void(0)">Home</a>
                 <a href="aboutusENG.html" class="navbar__link" onclick="void(0)">About Us</a>
-                <a href="#offer" class="navbar__link" onclick="void(0)">Offer</a>
+                <a href="inENG.html#offer" class="navbar__link" onclick="void(0)">Offer</a>
                 <a href="galleryENG.html" class="navbar__link" onclick="void(0)">Gallery</a>
-                <a href="conENG.html" class="navbar__link" onclick="void(0)">Contact</a>
+                <a href="#" class="navbar__link" onclick="void(0)">Contact</a>
             </div>
             <div class="burger">
                 <i class="fa-solid fa-bars"></i>
@@ -59,50 +59,35 @@
             <button class="cookie__btn">accept</button>
         </div>
 
+        <section class="sectioncontact" id="contact">
+            <div class="boxcontact">
+                <h2 class="boxcontact__heading">Send us an email</h2>
+                <!-- <form action="./php/mailEN.php" method="post" class="contactform"> -->
+                <form class="contactform">
+                    <div class="contactbox">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" placeholder="pass your name" name="name">
+                        <p class="errorname">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="email">Your e-mail:</label>
+                        <input type="email" id="email" placeholder="pass your e-mail" name="email">
+                        <p class="erroremail">error</p>
+                    </div>
+                    <div class="contactbox">
+                        <label for="msg">Your message:</label>
+                        <textarea name="msg" id="msg" placeholder="enter text"></textarea>
+                        <p class="errortext">error</p>
+                    </div>
+                    <div class="btncontact">
+                        <button class="btnsend">Send</button>
+                        <button class="btnclean">Clear</button>
+                    </div>
 
-        <section class="sectionhome" id="home">
-            <div class="cards">
-                <div class="cards__cardone">
-                    <div class="cards__cardone--img">
-                        <img src="./img/radius logo.png" alt="logo" class="imgcardone">
-                    </div>
-                    <h1 class="cards__cardone--heading">Radius 08 s.c.</h1>
-                    <p class="cards__cardone--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-                        unde.</p>
-                </div>
-                <div class="cards__cardtwo">
-                    <div class="cards__cardtwo--img">
-                        <img src="./img/radius logo.png" alt="logo" class="imgcardtwo">
-                    </div>
-                    <p class="cards__cardtwo--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel nihil
-                        neque modi eos. Accusamus, voluptates perspiciatis.</p>
-                    <button class="cards__cardtwo--btn">
-                        <a href="aboutusENG.html">read more</a>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="sectionoffer" id="offer">
-            <div class="offer">
-                <div class="offer__text">
-                    <h2 class="offer__text--heading">Our offer includes:</h2>
-                    <div class="offer__text--list">
-                        <ul>
-                            <li>creating new elements from scratch</li>
-                            <li>creating elements based on customer materials</li>
-                            <li>preparation of the entrusted project for printing</li>
-                            <li>full service of printing prepared materials</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="offer__img">
-                    <img src="./img/offer/offer1.jpg" alt="zdjęcie oferty druku" class="offerimgone">
-                    <img src="./img/offer/offer2.jpg" alt="zdjęcie oferty druku" class="offerimgtwo">
-                </div>
+                </form>
+
+                <p class="msgstatus"></p>
+
             </div>
         </section>
 
@@ -128,7 +113,7 @@
     </main>
 
 
-    <script src="./js/script.js"></script>
+    <script src="./js/mailEN.js"></script>
     <script src="./js/footerEN.js"></script>
 </body>
 

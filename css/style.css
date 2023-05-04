@@ -1021,8 +1021,8 @@ nav .wrapper .burger .hide {
           align-items: center;
   z-index: 10;
   width: 82%;
-  height: 60px;
-  top: 7%;
+  height: 50px;
+  top: 9%;
   color: var(--color-light);
   font-size: 3rem;
   background-color: var(--color-darklightopacity);
