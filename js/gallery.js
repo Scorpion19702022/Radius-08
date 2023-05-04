@@ -10,6 +10,8 @@ const body = document.querySelector('body')
 
 // --------------------------------------
 
+const closeGallery = document.querySelector('.galleryreturn')
+
 const photoInGallery = document.querySelector('.photo')
 const videoInGallery = document.querySelector('.video')
 
@@ -71,6 +73,13 @@ const swiper = new Swiper('.sliders, .videosswipers', {
 
 // ------------------------------------------
 
+const returnPages = () => {
+	photoInGallery.classList.add('actionphotomain')
+	videoInGallery.classList.add('actionvideomain')
+	viewPhotoSlider.classList.remove('swiperaction')
+	viewVideoSlider.classList.remove('videoaction')
+}
+
 const actionSliders1 = () => {
 	photoInGallery.classList.remove('actionphotomain')
 	videoInGallery.classList.remove('actionvideomain')
@@ -119,4 +128,5 @@ const handleCookie = () => {
 burgerBtn.addEventListener('click', handleNav)
 photoInGallery.addEventListener('click', actionSliders1)
 videoInGallery.addEventListener('click', actionSliders2)
+closeGallery.addEventListener('click', returnPages)
 cookieBtn.addEventListener('click', handleCookie)
