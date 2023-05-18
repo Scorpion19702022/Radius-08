@@ -205,15 +205,6 @@ nav {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				.imgcardtwo {
-					width: 40%;
-					object-fit: cover;
-					transform: scaleX(0);
-					transition: transform 0.2s ease-in-out;
-				}
-				.imgcardoneview {
-					transform: scaleX(1);
-				}
 			}
 		}
 		.actioncards {

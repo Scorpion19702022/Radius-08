@@ -38,9 +38,9 @@ const loadCards = () => {
 	setTimeout(() => {
 		imgCardOne.classList.add('imgcardoneview')
 	}, 2400)
-	setTimeout(() => {
-		imgCardTwo.classList.add('imgcardoneview')
-	}, 3200)
+	// setTimeout(() => {
+	// 	imgCardTwo.classList.add('imgcardoneview')
+	// }, 3200)
 }
 
 // ------------------------------------------
