@@ -27,16 +27,16 @@ body.onload = function () {
 const loadCards = () => {
 	setTimeout(() => {
 		cardAboutOne.classList.add('actioncardsaboutus')
-	}, 500)
+	}, 300)
 	setTimeout(() => {
 		cardAboutTwo.classList.add('actioncardsaboutus')
-	}, 1000)
+	}, 600)
 	setTimeout(() => {
 		cardAboutThree.classList.add('actioncardsaboutus')
-	}, 1500)
+	}, 900)
 	setTimeout(() => {
 		cardAboutFour.classList.add('actioncardsaboutus')
-	}, 2000)
+	}, 1200)
 }
 
 const handleNav = () => {

@@ -73,10 +73,10 @@
 			margin: 1em;
 			width: 47%;
 			height: 360px;
-			perspective: 1000px;
-			transform: rotateY(0);
+			// perspective: 1000px;
+			// transform: rotateY(0);
 			opacity: 0;
-			transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
 			&__heading {
 				font-size: 3.4rem;
 			}
@@ -91,7 +91,7 @@
 			}
 		}
 		.actioncardsaboutus {
-			transform: rotateY(360deg);
+			// transform: rotateY(360deg);
 			opacity: 1;
 		}
 	}

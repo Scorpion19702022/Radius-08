@@ -444,16 +444,9 @@ nav .wrapper .burger .hide {
   margin: 1em;
   padding: 1.4em;
   border: 0.02em solid var(--color-red);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
 }
 .sectionaboutus .cardabout:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0.3em 0.3em 0em var(--color-red);
-          box-shadow: 0.3em 0.3em 0em var(--color-red);
+  background-color: var(--color-rederrors);
 }
 .sectionaboutus .cardabout__heading {
   font-size: 2.8rem;
@@ -1378,15 +1371,9 @@ footer .footerproducer .contact a:hover {
     margin: 1em;
     width: 47%;
     height: 360px;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
     opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
   .sectionaboutus .cardabout__heading {
     font-size: 3.4rem;
@@ -1401,8 +1388,6 @@ footer .footerproducer .contact a:hover {
     height: 50%;
   }
   .sectionaboutus .actioncardsaboutus {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
     opacity: 1;
   }
   .sectionoffer {

@@ -235,10 +235,9 @@ nav {
 		margin: 1em;
 		padding: 1.4em;
 		border: 0.02em solid var(--color-red);
-		transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		// transition: background-color 3s ease-in-out;
 		&:hover {
-			transform: scale(1.02);
-			box-shadow: 0.3em 0.3em 0em var(--color-red);
+			background-color: var(--color-rederrors);
 		}
 		&__heading {
 			font-size: 2.8rem;
