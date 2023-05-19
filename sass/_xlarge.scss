@@ -21,10 +21,17 @@
 		.cards {
 			padding: 0.4em;
 			&__cardone {
-				padding: 3em;
+				padding: 1.8em;
 				height: 47%;
 				&--img {
-					margin-bottom: 1.2em;
+					width: 100%;
+					// height: 45%;
+					object-fit: cover;
+					margin-bottom: 0.6em;
+					.imgcardone {
+						height: 100%;
+						object-fit: cover;
+					}
 				}
 				&--heading {
 					font-size: 6rem;
@@ -34,7 +41,7 @@
 				}
 			}
 			&__cardtwo {
-				padding: 3em;
+				padding: 1.8em;
 				height: 47%;
 				&--text {
 					font-size: 1.8rem;

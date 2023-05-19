@@ -20,17 +20,20 @@
 	}
 	.sectionhome {
 		.cards {
+			width: 60%;
 			padding: 0.4em;
 			&__cardone {
 				height: 47%;
 				&--img {
+					width: 100%;
+					// height: 40%;
 					margin-bottom: 1.2em;
 					.imgcardone {
 						width: 35%;
 					}
 				}
 				&--heading {
-					font-size: 4.2rem;
+					font-size: 5.8rem;
 				}
 			}
 			&__cardtwo {

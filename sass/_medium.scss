@@ -49,10 +49,11 @@
 				justify-content: space-between;
 				transition: transform 0.3s, opacity 1s ease-in-out;
 				&--img {
-					height: 40%;
+					// height: 80%;
+					width: 100%;
 					margin-bottom: 0.2em;
 					.imgcardone {
-						width: 40%;
+						width: 45%;
 					}
 				}
 				&--heading {

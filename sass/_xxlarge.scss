@@ -22,12 +22,13 @@
 	.sectionhome {
 		padding: 6em 2em 2em 8em;
 		.cards {
-			width: 40%;
+			width: 42%;
 			padding: 0.4em;
 			overflow: hidden;
 			&__cardone {
 				&--img {
-					margin-bottom: 1.2em;
+					margin-bottom: 0.4em;
+					// height: 80%;
 				}
 				&--heading {
 					font-size: 6rem;
@@ -37,7 +38,7 @@
 				}
 			}
 			&__cardtwo {
-				padding: 3em;
+				// padding: 3em;
 				height: 47%;
 				&--text {
 					font-size: 1.8rem;
