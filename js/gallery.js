@@ -35,10 +35,10 @@ body.onload = function () {
 const loadCards = () => {
 	setTimeout(() => {
 		photoInGallery.classList.add('actionphotomain')
-	}, 800)
+	}, 400)
 	setTimeout(() => {
 		videoInGallery.classList.add('actionvideomain')
-	}, 1600)
+	}, 800)
 }
 
 const handleNav = () => {

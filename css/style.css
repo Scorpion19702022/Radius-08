@@ -310,7 +310,7 @@ nav .wrapper .burger .hide {
 .sectionhome .cards__cardone {
   width: 90%;
   height: 47%;
-  padding: 2em;
+  padding: 1em;
   margin-bottom: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,7 +335,6 @@ nav .wrapper .burger .hide {
 .sectionhome .cards__cardone--img {
   height: 60%;
   width: 100%;
-  margin-bottom: 0.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +368,7 @@ nav .wrapper .burger .hide {
 .sectionhome .cards__cardtwo {
   width: 90%;
   height: 47%;
-  padding: 2em;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,7 +1114,7 @@ footer .footerproducer .contact a:hover {
   }
   .sectionhome {
     height: 100vh;
-    padding: 6em 0.8em 1em 0.8em;
+    padding: 5em 0.8em 1em 0.8em;
   }
   .sectionhome .cards {
     width: 100%;
@@ -1123,23 +1122,23 @@ footer .footerproducer .contact a:hover {
   }
   .sectionhome .cards__cardone {
     height: 47%;
-    padding: 1em;
+    padding: 1.6em;
   }
   .sectionhome .cards__cardone--img {
     height: 60%;
   }
   .sectionhome .cards__cardone--heading {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
   .sectionhome .cards__cardone--text {
     font-size: 1.2rem;
   }
   .sectionhome .cards__cardtwo {
     height: 47%;
-    padding: 1em;
+    padding: 1.6em;
   }
   .sectionhome .cards__cardtwo--heading {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .sectionhome .cards__cardtwo--text {
     font-size: 1.2rem;
