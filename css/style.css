@@ -1123,21 +1123,23 @@ footer .footerproducer .contact a:hover {
   }
   .sectionhome .cards__cardone {
     height: 47%;
+    padding: 1em;
   }
   .sectionhome .cards__cardone--img {
     height: 60%;
   }
   .sectionhome .cards__cardone--heading {
-    font-size: 2.6rem;
+    font-size: 3.8rem;
   }
   .sectionhome .cards__cardone--text {
     font-size: 1.2rem;
   }
   .sectionhome .cards__cardtwo {
     height: 47%;
+    padding: 1em;
   }
   .sectionhome .cards__cardtwo--heading {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .sectionhome .cards__cardtwo--text {
     font-size: 1.2rem;
